@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import "./index.scss"
 import Layout from "@/pages/Layout";
@@ -6,7 +6,7 @@ import Layout from "@/pages/Layout";
 const Home = lazy(()=> import('../pages/Home'))
 const Algorithm = lazy(()=> import('../pages/Algorithm_learning/01_TimeComplexity'))
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/',
         element: <Layout/>,
