@@ -36,7 +36,7 @@ const { Header, Sider, Footer } = Layout
 const items: MenuItem[] = [
     getItem('首頁', '/', <HomeOutlined />),
     getItem('演算法學習', 'sub1', <DiffOutlined />, [
-      getItem('第一章', 'algorithm'),
+      getItem('第一章-時間複雜度', 'TimeComplexity'),
     //   getItem('Bill', '4'),
     //   getItem('Alex', '5'),
     ]),

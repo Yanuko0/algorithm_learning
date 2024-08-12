@@ -1,0 +1,50 @@
+.full_page {
+    display: flex;
+    flex-direction: column;
+    .title {
+        background-color: rgba(172, 172, 172, 0.822);
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .introduce {
+            display: flex;
+            flex-direction: column;
+        div {
+            display: flex;
+            flex-direction: column; 
+            p:nth-child(1) {
+                border: 1px rgba(172, 172, 172, 0.822) solid;
+                background-color: rgba(172, 172, 172, 0.822);
+                padding: 10px;
+                color: white;
+            }
+        }
+    }
+    
+    .Detailed_introduction {
+        display: flex;
+
+        div {
+            border: 1px rgba(172, 172, 172, 0.822) solid;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+   
+            p:nth-child(1) {
+                padding: 10px;
+                border: 1px rgba(172, 172, 172, 0.822) solid;
+                display: flex;
+                justify-content: center;
+                background-color: rgba(172, 172, 172, 0.822);
+                color: white;
+                font-size: larger;
+            }
+        }
+    }
+}
