@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig({
   
   plugins: [react()],
-  base: '/algorithm_learning/',
+  base: './',
   resolve: {
         alias: {
           '@': path.resolve(__dirname, './src'),
