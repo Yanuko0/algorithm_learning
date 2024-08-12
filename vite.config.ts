@@ -4,8 +4,9 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  
   plugins: [react()],
+  base: '/algorithm_learning/',
   resolve: {
         alias: {
           '@': path.resolve(__dirname, './src'),
