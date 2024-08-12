@@ -3,15 +3,11 @@ import { Layout, Menu, Popconfirm, MenuProps } from "antd"
 import {
     HomeOutlined,
     DiffOutlined,
-    EditOutlined,
     LogoutOutlined,
 
 } from '@ant-design/icons'
 import './index.scss'
 import { Outlet, useLocation, useNavigate } from "react-router-dom"
-import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-// import { clearUserInfo, fetchUserInfo } from "@/store/modules/user" 
 
 type MenuItem = Required<MenuProps>['items'][number];
 
