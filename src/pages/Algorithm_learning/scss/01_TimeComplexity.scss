@@ -1,8 +1,12 @@
+@use "../../../lib/scss/variables.scss" as *;
+
+
+
 .full_page {
     display: flex;
     flex-direction: column;
     .title {
-        background-color: rgba(172, 172, 172, 0.822);
+        background-color: $title-bgcolor;
         color: white;
         display: flex;
         justify-content: center;
@@ -18,7 +22,7 @@
             flex-direction: column; 
             p:nth-child(1) {
                 border: 1px rgba(172, 172, 172, 0.822) solid;
-                background-color: rgba(172, 172, 172, 0.822);
+                background-color: $title-introducecolor;
                 padding: 10px;
                 color: white;
             }
@@ -41,7 +45,7 @@
                 border: 1px rgba(172, 172, 172, 0.822) solid;
                 display: flex;
                 justify-content: center;
-                background-color: rgba(172, 172, 172, 0.822);
+                background-color: $title-DetailedIntroductioncolor;
                 color: white;
                 font-size: larger;
             }
