@@ -7,6 +7,7 @@ const Home = lazy(()=> import('../pages/Home'))
 const TimeComplexity = lazy(()=> import('../pages/Algorithm_learning/01_TimeComplexity'))
 const SpaceComplexity = lazy(()=> import('../pages/Algorithm_learning/02_SpaceComplexity'))
 const Stack = lazy(()=> import('../pages/Algorithm_learning/03_Stack'))
+const Queue = lazy(()=> import('../pages/Algorithm_learning/04_Queue'))
 
 const router = createHashRouter([
     {
@@ -28,6 +29,10 @@ const router = createHashRouter([
             {
                 path: "Stack",
                 element:<Suspense fallback={'加載中'}><Stack/></Suspense>
+            },
+            {
+                path: "Queue",
+                element:<Suspense fallback={'加載中'}><Queue/></Suspense>
             },
         ]
     },

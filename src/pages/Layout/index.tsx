@@ -34,7 +34,9 @@ const items: MenuItem[] = [
     getItem('演算法', 'sub1', <DiffOutlined />, [
       getItem('第一章-時間複雜度', 'TimeComplexity'),
       getItem('第二章-空間複雜度', 'SpaceComplexity'),
-      getItem('第三章-堆疊(棧)', 'Stack'),
+      getItem('第三章-棧(堆疊)', 'Stack'),
+      getItem('第三章-對列(佇列)', 'Queue'),
+      
     ]),
   ];
 
@@ -81,7 +83,7 @@ const App: React.FC = () => {
                     {/* 二級路由出口 */}
                     <Outlet />
                     <Footer style={{ textAlign: 'center' }}>
-                        立瑜 ©{new Date().getFullYear()} Created by LiYu
+                        <a href="https://www.instagram.com/baredragon/">立瑜製作</a> ©{new Date().getFullYear()} Created by LiYu
                     </Footer>
                 </Layout>
 
