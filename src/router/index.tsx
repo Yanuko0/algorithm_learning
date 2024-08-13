@@ -4,7 +4,9 @@ import "./index.scss"
 import Layout from "@/pages/Layout";
 
 const Home = lazy(()=> import('../pages/Home'))
-const Algorithm = lazy(()=> import('../pages/Algorithm_learning/01_TimeComplexity'))
+const TimeComplexity = lazy(()=> import('../pages/Algorithm_learning/01_TimeComplexity'))
+const SpaceComplexity = lazy(()=> import('../pages/Algorithm_learning/02_SpaceComplexity'))
+const Stack = lazy(()=> import('../pages/Algorithm_learning/03_Stack'))
 
 const router = createHashRouter([
     {
@@ -17,7 +19,15 @@ const router = createHashRouter([
             },
             {
                 path: "TimeComplexity",
-                element:<Suspense fallback={'加載中'}><Algorithm/></Suspense>
+                element:<Suspense fallback={'加載中'}><TimeComplexity/></Suspense>
+            },
+            {
+                path: "SpaceComplexity",
+                element:<Suspense fallback={'加載中'}><SpaceComplexity/></Suspense>
+            },
+            {
+                path: "Stack",
+                element:<Suspense fallback={'加載中'}><Stack/></Suspense>
             },
         ]
     },

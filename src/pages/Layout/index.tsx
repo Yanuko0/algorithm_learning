@@ -33,8 +33,8 @@ const items: MenuItem[] = [
     getItem('首頁', '/', <HomeOutlined />),
     getItem('演算法', 'sub1', <DiffOutlined />, [
       getItem('第一章-時間複雜度', 'TimeComplexity'),
-    //   getItem('Bill', '4'),
-    //   getItem('Alex', '5'),
+      getItem('第二章-空間複雜度', 'SpaceComplexity'),
+      getItem('第三章-堆疊(棧)', 'Stack'),
     ]),
   ];
 

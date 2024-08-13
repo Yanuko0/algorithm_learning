@@ -41,6 +41,7 @@ const TimeComplexity: React.FC = () => {
 
 
             </div>
+            <br/>
             <div className="Detailed_introduction">
                 {/* O（1） */}
                 <div>
