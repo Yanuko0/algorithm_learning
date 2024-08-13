@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "start_url":".",
-  "homepage": "./",
+  "homepage": "https://yanuko0.github.io/algorithm_learning",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predepoly":"npm run build",
+    "depoly":"gh-pages -d dist"
   },
   "dependencies": {
     "antd": "^5.20.1",
