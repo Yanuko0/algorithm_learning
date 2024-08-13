@@ -1,4 +1,4 @@
-import "./scss/01_TimeComplexity.scss"
+import "./scss/algorithmPageStyle.scss"
 
 const TimeComplexity: React.FC = () => {
     return (

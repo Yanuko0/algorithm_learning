@@ -1,10 +1,12 @@
-import "./scss/01_TimeComplexity.scss"
-import queue from "./assets/img/queue_operations.png"
-import leetcode20 from "./assets/img/leetcode20.png"
-import leetcode1047 from "./assets/img/leetcode1047.png"
-import leetcode71 from "./assets/img/leetcode71.png"
+import { Image } from "antd"
+import "./scss/algorithmPageStyle.scss"
+import queue from "./assets/img/圖解/queue_operations.png"
+import leetcode933 from "./assets/img/leetcode933.png"
+
 
 const Queue: React.FC = () => {
+    
+
     return (
         <div className="full_page">
             {/* 標題 */}
@@ -17,8 +19,8 @@ const Queue: React.FC = () => {
                     <p>
                         圖解
                     </p>
-                    <p className="diagram">
-                        <img src={queue} alt="棧圖"/>
+                    <p className="diagram">  
+                        <Image src={queue} alt="棧圖"/>
                     </p>
                 </div>
                 <div>
@@ -63,28 +65,15 @@ const Queue: React.FC = () => {
             </div>
             <br />
             <div className="Detailed_introduction">
-                {/*Leetcode第20題*/}
+                {/*Leetcode第933題*/}
                 <div>
-                    <p><a href="https://leetcode.com/problems/valid-parentheses/description/" >Leetcode第20題</a></p>
+                    <p><a href="https://leetcode.com/problems/number-of-recent-calls/description/" >Leetcode第933題</a></p>
                     <p>
-                        <img src={leetcode20} alt="" />
+                        <Image 
+                            src={leetcode933} alt=""
+                        />
                     </p>
                 </div>
-                {/* Leetcode第1047題 */}
-                <div>
-                    <p><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/">Leetcode第1047題</a></p>
-                    <p>
-                    <img src={leetcode1047} alt="" />
-                    </p>
-                </div>
-                <div>
-                    <p><a href="https://leetcode.com/problems/simplify-path/description/">Leetcode第71題</a></p>
-                    <p>
-                    <img src={leetcode71} alt="" />
-                    </p>
-                </div>
-                
-
             </div>
         </div>
     )

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createHashRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import "./index.scss"
@@ -8,6 +9,7 @@ const TimeComplexity = lazy(()=> import('../pages/Algorithm_learning/01_TimeComp
 const SpaceComplexity = lazy(()=> import('../pages/Algorithm_learning/02_SpaceComplexity'))
 const Stack = lazy(()=> import('../pages/Algorithm_learning/03_Stack'))
 const Queue = lazy(()=> import('../pages/Algorithm_learning/04_Queue'))
+const LinkedList = lazy(()=> import('../pages/Algorithm_learning/05_LinkedList'))
 
 const router = createHashRouter([
     {
@@ -34,6 +36,10 @@ const router = createHashRouter([
                 path: "Queue",
                 element:<Suspense fallback={'加載中'}><Queue/></Suspense>
             },
+            {
+                path: "LinkedList",
+                element:<Suspense fallback={'加載中'}><LinkedList/></Suspense>
+            }
         ]
     },
 ])
