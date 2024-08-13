@@ -7,9 +7,9 @@ export default defineConfig({
   
   plugins: [react()],
   base: '/algorithm_learning/',
-  build:{
-    outDir: 'docs'
-  },
+  // build:{
+  //   outDir: 'docs'
+  // },
   resolve: {
         alias: {
           '@': path.resolve(__dirname, './src'),
