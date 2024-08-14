@@ -1,4 +1,10 @@
 import "./scss/algorithmPageStyle.scss"
+import { Image } from "antd"
+import space_types01 from "./assets/img/圖解/space_types01.png"
+import space_complexity_02 from "./assets/img/圖解/space_complexity_02.png"
+import space_complexity_03 from "./assets/img/圖解/space_complexity_03.png"
+import space_complexity_04 from "./assets/img/圖解/space_complexity_04.png"
+
 
 const SpaceComplexity: React.FC = () => {
     return (
@@ -9,6 +15,25 @@ const SpaceComplexity: React.FC = () => {
             </div>
             {/* 基本介紹 */}
             <div className="introduce">
+            <div className="diagrambox">
+                    <p>
+                        圖解
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={space_types01} alt="space_types01" />
+                                <Image src={space_complexity_02} alt="space_complexity_02" style={{ display: "none" }} />
+                                <Image src={space_complexity_03} alt="space_complexity_03" style={{ display: "none" }} />
+                                <Image src={space_complexity_04} alt="space_complexity_04" style={{ display: "none" }} />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div>
                 <div>
                     <p>
                         1.是什麼?
