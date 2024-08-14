@@ -2,15 +2,14 @@ import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 import map_01 from "./assets/img/解說/map_01.png"
 import map_02 from "./assets/img/解說/map_02.png"
-import map_03 from "./assets/img/解說/map_03.png"
 import hash_01 from "./assets/img/解說/hash_01.png"
-import hash_02 from "./assets/img/解說/hash_02.png"
 import hash_table_lookup from "./assets/img/圖解/hash_table_lookup.png"
 import leetcode01 from "./assets/img/Leetcode/leetcode01.png"
 import leetcode217 from "./assets/img/Leetcode/leetcode217.png"
 import leetcode349 from "./assets/img/Leetcode/leetcode349.png"
 import leetcode1207 from "./assets/img/Leetcode/leetcode1207.png"
 import newMap找數組 from "./assets/img/解說/newMap找數組.png"
+import leetcode03 from "./assets/img/Leetcode/leetcode03.png"
 
 
 const Dictionary_Hash: React.FC = () => {
@@ -155,7 +154,6 @@ const Dictionary_Hash: React.FC = () => {
                             >
                                 <Image src={map_01} alt="map_01" style={{display:"none"}}/>
                                 <Image src={map_02} alt="map_02" />
-                                <Image src={map_03} alt="map_03" />
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -182,7 +180,6 @@ const Dictionary_Hash: React.FC = () => {
                             >
                                 <Image src={hash_table_lookup} alt="哈希表" />
                                 <Image src={hash_01} alt="hash_01" style={{display:"none"}}/>
-                                <Image src={hash_02} alt="hash_02" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -235,6 +232,15 @@ const Dictionary_Hash: React.FC = () => {
                                 <Image src={newMap找數組} alt="newMap找數組" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
+                    </p>
+                </div>
+                {/*Leetcode第3題*/}
+                <div>
+                    <p>
+                        <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" >Leetcode第3題</a>
+                    </p>
+                    <p>
+                        <Image src={leetcode03} alt="leetcode03"/>
                     </p>
                 </div>
                 

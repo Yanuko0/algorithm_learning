@@ -11,6 +11,7 @@ const Stack = lazy(()=> import('../pages/Algorithm_learning/03_Stack'))
 const Queue = lazy(()=> import('../pages/Algorithm_learning/04_Queue'))
 const LinkedList = lazy(()=> import('../pages/Algorithm_learning/05_LinkedList'))
 const Dictionary_Hash = lazy(()=> import('../pages/Algorithm_learning/06_Dictionary_Hash'))
+const Tree = lazy(()=> import('../pages/Algorithm_learning/07_Tree'))
 
 const router = createHashRouter([
     {
@@ -44,6 +45,10 @@ const router = createHashRouter([
             {
                 path: "Dictionary_Hash",
                 element:<Suspense fallback={'加載中'}><Dictionary_Hash/></Suspense>
+            },
+            {
+                path: "Tree",
+                element:<Suspense fallback={'加載中'}><Tree/></Suspense>
             },
         ]
     },

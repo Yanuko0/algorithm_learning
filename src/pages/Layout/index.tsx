@@ -42,6 +42,7 @@ const items: MenuItem[] = [
         getItem('第四章-對列(佇列)', 'Queue'),
         getItem('第五章-鏈表(鏈結串列)', 'LinkedList'),
         getItem('第六章-字典與哈希表', 'Dictionary_Hash'),
+        getItem('第七章-樹', 'Tree'),
     
     ]),
 ];
