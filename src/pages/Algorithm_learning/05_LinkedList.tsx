@@ -2,8 +2,7 @@ import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 import linkedList from "./assets/img/圖解/linkedlist_definition.png"
 import linkedistCommentary from "./assets/img/解說/linkedist_解說.png"
-import leetcode1047 from "./assets/img/leetcode1047.png"
-import leetcode71 from "./assets/img/leetcode71.png"
+
 
 const LinkedList: React.FC = () => {
 
@@ -70,26 +69,13 @@ const LinkedList: React.FC = () => {
             <br />
             <div className="Detailed_introduction">
                 {/*Leetcode第20題*/}
-                <div>
+                {/* <div>
                     <p><a href="https://leetcode.com/problems/valid-parentheses/description/" >Leetcode第20題</a></p>
                     <p>
-                        {/* <Image src={} alt="leetcode20"/> */}
+                        <Image src={} alt="leetcode20"/>
                     </p>
-                </div>
-                {/* Leetcode第1047題 */}
-                <div>
-                    <p><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/">Leetcode第1047題</a></p>
-                    <p>
-                        <Image src={leetcode1047} alt="leetcode1047" />
-                    </p>
-                </div>
-                {/* Leetcode第71題 */}
-                <div>
-                    <p><a href="https://leetcode.com/problems/simplify-path/description/">Leetcode第71題</a></p>
-                    <p>
-                        <Image src={leetcode71} alt="leetcode71" />
-                    </p>
-                </div>
+                </div> */}
+
 
             </div>
 
