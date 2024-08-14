@@ -76,7 +76,7 @@ const App: React.FC = () => {
     }, [location.pathname]);
 
     //左側導行欄位縮放
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     const toggleCollapsed = () => {
         setCollapsed(!collapsed);
@@ -122,7 +122,7 @@ const App: React.FC = () => {
                     {/* 二級路由出口 */}
                     <Outlet />
                     <Footer style={{ textAlign: 'center' }}>
-                        <a href="https://www.instagram.com/baredragon/">立瑜製作</a> ©{new Date().getFullYear()} Created by LiYu
+                        <a href="https://www.instagram.com/baredragon/"  target="_blank" >立瑜製作</a> ©{new Date().getFullYear()} Created by LiYu
                     </Footer>
                 </Layout>
 

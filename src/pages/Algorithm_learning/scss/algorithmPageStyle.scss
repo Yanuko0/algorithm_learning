@@ -80,6 +80,9 @@
 
                 a{
                     color: white;
+                    &:hover {
+                        color: rgb(97, 175, 228);
+                    }  
                 }
             }
 
