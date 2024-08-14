@@ -10,6 +10,7 @@ const SpaceComplexity = lazy(()=> import('../pages/Algorithm_learning/02_SpaceCo
 const Stack = lazy(()=> import('../pages/Algorithm_learning/03_Stack'))
 const Queue = lazy(()=> import('../pages/Algorithm_learning/04_Queue'))
 const LinkedList = lazy(()=> import('../pages/Algorithm_learning/05_LinkedList'))
+const Dictionary_Hash = lazy(()=> import('../pages/Algorithm_learning/06_Dictionary_Hash'))
 
 const router = createHashRouter([
     {
@@ -39,7 +40,11 @@ const router = createHashRouter([
             {
                 path: "LinkedList",
                 element:<Suspense fallback={'加載中'}><LinkedList/></Suspense>
-            }
+            },
+            {
+                path: "Dictionary_Hash",
+                element:<Suspense fallback={'加載中'}><Dictionary_Hash/></Suspense>
+            },
         ]
     },
 ])

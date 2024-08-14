@@ -1,7 +1,7 @@
 import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 import queue from "./assets/img/圖解/queue_operations.png"
-import leetcode933 from "./assets/img/leetcode933.png"
+import leetcode933 from "./assets/img/Leetcode/leetcode933.png"
 
 
 const Queue: React.FC = () => {

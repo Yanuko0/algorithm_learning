@@ -7,11 +7,11 @@ import linkedlist_remove_node from "./assets/img/圖解/linkedlist_remove_node.p
 import 鏈表插入刪除 from "./assets/img/解說/鏈表插入刪除.png"
 import instanceof實現 from "./assets/img/解說/instanceof實現.png"
 import linkedistCommentary from "./assets/img/解說/linkedist_解說.png"
-import leetcode141 from "./assets/img/leetcode141.png"
-import leetcode237 from "./assets/img/leetcode237.png"
-import leetcode83 from "./assets/img/leetcode83.png"
-import leetcode206 from "./assets/img/leetcode206.png"
-import leetcode206_1 from "./assets/img/leetcode206_1.png"
+import leetcode141 from "./assets/img/Leetcode/leetcode141.png"
+import leetcode237 from "./assets/img/Leetcode/leetcode237.png"
+import leetcode83 from "./assets/img/Leetcode/leetcode83.png"
+import leetcode206 from "./assets/img/Leetcode/leetcode206.png"
+import leetcode206_1 from "./assets/img/Leetcode/leetcode206_1.png"
 
 
 // interface ListNode {
@@ -136,9 +136,9 @@ const LinkedList: React.FC = () => {
                     <p>
                         <a href="https://leetcode.com/problems/linked-list-cycle/description/" >Leetcode第141題</a>
                     </p>
-                    <p>
+                    <div>
                         <Image src={leetcode141} alt="leetcode141"/>
-                    </p>
+                    </div>
                 </div>
                 {/*Leetcode第237題*/}
                 <div>
@@ -171,7 +171,7 @@ const LinkedList: React.FC = () => {
                                 }}
                             >
                                 <Image src={leetcode206} alt="leetcode206"/>
-                                <Image src={leetcode206_1} alt="leetcode206-1" height={0}/>
+                                <Image src={leetcode206_1} alt="leetcode206_1" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
                     </p>

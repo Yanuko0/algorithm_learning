@@ -41,7 +41,8 @@ const items: MenuItem[] = [
         getItem('第三章-棧(堆疊)', 'Stack'),
         getItem('第四章-對列(佇列)', 'Queue'),
         getItem('第五章-鏈表(鏈結串列)', 'LinkedList'),
-
+        getItem('第六章-字典與哈希表', 'Dictionary_Hash'),
+    
     ]),
 ];
 
@@ -59,7 +60,7 @@ const App: React.FC = () => {
     //反向高亮
     // 1.獲取當前路由路徑
     const location = useLocation()
-    console.log(location.pathname)
+    // console.log(location.pathname)
     // const selectedKey = location.pathname
 
 
@@ -112,7 +113,6 @@ const App: React.FC = () => {
                         // defaultSelectedKeys={['1']}
                         selectedKeys={[current]}
                         onClick={onMenuClick}
-                        inlineCollapsed={collapsed}
                         items={items}
                         style={{ height: '100%', borderRight: 0 }}>
                     </Menu>

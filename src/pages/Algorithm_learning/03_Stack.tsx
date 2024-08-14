@@ -1,9 +1,9 @@
 import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 import stack from "./assets/img/圖解/stack_operations.png"
-import leetcode20 from "./assets/img/leetcode20.png"
-import leetcode1047 from "./assets/img/leetcode1047.png"
-import leetcode71 from "./assets/img/leetcode71.png"
+import leetcode20 from "./assets/img/Leetcode/leetcode20.png"
+import leetcode1047 from "./assets/img/Leetcode/leetcode1047.png"
+import leetcode71 from "./assets/img/Leetcode/leetcode71.png"
 
 const Stack: React.FC = () => {
  
