@@ -52,9 +52,9 @@ const App: React.FC = () => {
     const navigate = useNavigate()
     const onMenuClick = (route: { key: string }) => {
         // console.log("菜單被點擊了",route)
-        const path = route.key
-        setCurrent(path);
+        const path = route.key as string;
         navigate(path)
+        setCurrent(path);
     }
 
 
@@ -63,6 +63,13 @@ const App: React.FC = () => {
     const location = useLocation()
     // console.log(location.pathname)
     // const selectedKey = location.pathname
+    // console.log(selectedKey)
+
+ 
+    useEffect(() => {
+        setCurrent(location.pathname);
+    }, [navigate]);
+
 
 
     //更改主題顏色
@@ -73,10 +80,7 @@ const App: React.FC = () => {
         setMenuTheme(value ? 'dark' : 'light');
     };
 
-    useEffect(() => {
-        setCurrent(location.pathname);
-    }, [location.pathname]);
-
+  
     //左側導行欄位縮放
     const [collapsed, setCollapsed] = useState(true);
 
