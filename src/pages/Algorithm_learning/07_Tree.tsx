@@ -1,4 +1,4 @@
-import { Image, Pagination } from "antd"
+import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 
 import leetcode144 from "./assets/img/Leetcode/leetcode144.png"
@@ -46,7 +46,7 @@ import bst_remove_case3_step4 from "./assets/img/圖解/tree/bst_remove_case3_st
 import bst_insert from "./assets/img/圖解/tree/bst_insert.png"
 import bst_remove_case1 from "./assets/img/圖解/tree/bst_remove_case1.png"
 import bst_remove_case2 from "./assets/img/圖解/tree/bst_remove_case2.png"
-import { useState } from "react"
+
 
 
 
@@ -103,33 +103,33 @@ const Tree: React.FC = () => {
     // fun2(tree)
 
     //二元樹(二叉樹)
-    const tree = {
-        val:'1',
-        left:{
-            val:'2',
-            left:{val:'4',left:null,right:null},
-            right:{val:'5',left:null,right:null},
-        },
-        right:{
-            val:'3',
-            left:{val:'6',left:null,right:null},
-            right:{val:'7',left:null,right:null},
-        }
-    }
+    // const tree = {
+    //     val:'1',
+    //     left:{
+    //         val:'2',
+    //         left:{val:'4',left:null,right:null},
+    //         right:{val:'5',left:null,right:null},
+    //     },
+    //     right:{
+    //         val:'3',
+    //         left:{val:'6',left:null,right:null},
+    //         right:{val:'7',left:null,right:null},
+    //     }
+    // }
 
-    const tree2 = {
-        val:'1',
-        left:{
-            val:'2',
-            left:{val:'4',left:null,right:null},
-            right:{val:'5',left:null,right:null},
-        },
-        right:{
-            val:'3',
-            left:{val:'6',left:null,right:null},
-            right:{val:'7',left:null,right:null},
-        }
-    }
+    // const tree2 = {
+    //     val:'1',
+    //     left:{
+    //         val:'2',
+    //         left:{val:'4',left:null,right:null},
+    //         right:{val:'5',left:null,right:null},
+    //     },
+    //     right:{
+    //         val:'3',
+    //         left:{val:'6',left:null,right:null},
+    //         right:{val:'7',left:null,right:null},
+    //     }
+    // }
 
      //二元樹(二叉樹)
     //  const tree = {
