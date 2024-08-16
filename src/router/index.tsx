@@ -12,6 +12,9 @@ const Queue = lazy(()=> import('../pages/Algorithm_learning/04_Queue'))
 const LinkedList = lazy(()=> import('../pages/Algorithm_learning/05_LinkedList'))
 const Dictionary_Hash = lazy(()=> import('../pages/Algorithm_learning/06_Dictionary_Hash'))
 const Tree = lazy(()=> import('../pages/Algorithm_learning/07_Tree'))
+const Heap = lazy(()=> import('../pages/Algorithm_learning/08_Heap'))
+const Algorithm = lazy(()=> import('../pages/Algorithm_learning/09_Algorithm'))
+
 
 const router = createHashRouter([
     {
@@ -49,6 +52,14 @@ const router = createHashRouter([
             {
                 path: "Tree",
                 element:<Suspense fallback={'加載中'}><Tree/></Suspense>
+            },
+            {
+                path: "Heap",
+                element:<Suspense fallback={'加載中'}><Heap/></Suspense>
+            },
+            {
+                path: "Algorithm",
+                element:<Suspense fallback={'加載中'}><Algorithm/></Suspense>
             },
         ]
     },

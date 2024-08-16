@@ -43,7 +43,8 @@ const items: MenuItem[] = [
         getItem('第五章-鏈表(鏈結串列)', 'LinkedList'),
         getItem('第六章-字典與哈希表', 'Dictionary_Hash'),
         getItem('第七章-樹', 'Tree'),
-    
+        getItem('第八章-堆', 'Heap'),
+        getItem('第九章-算法', 'Algorithm'),
     ]),
 ];
 
