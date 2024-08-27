@@ -4,13 +4,10 @@ import map_01 from "./assets/img/解說/map_01.png"
 import map_02 from "./assets/img/解說/map_02.png"
 import hash_01 from "./assets/img/解說/hash_01.png"
 import hash_table_lookup from "./assets/img/圖解/hash_table_lookup.png"
-import leetcode01 from "./assets/img/Leetcode/leetcode01.png"
-import leetcode217 from "./assets/img/Leetcode/leetcode217.png"
-import leetcode349 from "./assets/img/Leetcode/leetcode349.png"
-import leetcode1207 from "./assets/img/Leetcode/leetcode1207.png"
 import newMap找數組 from "./assets/img/解說/newMap找數組.png"
-import leetcode03 from "./assets/img/Leetcode/leetcode03.png"
 
+
+import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
 
 const Dictionary_Hash: React.FC = () => {
 
@@ -195,7 +192,7 @@ const Dictionary_Hash: React.FC = () => {
                         <a href="https://leetcode.com/problems/two-sum/description/" >Leetcode第1題</a>
                     </p>
                     <p>
-                        <Image src={leetcode01} alt="leetcode01"/>
+                        <Image src={leetcode_img.leetcode01} alt="leetcode01"/>
                     </p>
                 </div>
                 {/*Leetcode第217題*/}
@@ -204,7 +201,7 @@ const Dictionary_Hash: React.FC = () => {
                         <a href="https://leetcode.com/problems/contains-duplicate/description/" >Leetcode第217題</a>
                     </p>
                     <p>
-                        <Image src={leetcode217} alt="leetcode217"/>
+                        <Image src={leetcode_img.leetcode217} alt="leetcode217"/>
                     </p>
                 </div>
                  {/*Leetcode第349題*/}
@@ -213,7 +210,7 @@ const Dictionary_Hash: React.FC = () => {
                         <a href="https://leetcode.com/problems/intersection-of-two-arrays/" >Leetcode第349題</a>
                     </p>
                     <p>
-                        <Image src={leetcode349} alt="leetcode349"/>
+                        <Image src={leetcode_img.leetcode349} alt="leetcode349"/>
                     </p>
                 </div>
                   {/*Leetcode第1207題*/}
@@ -228,7 +225,7 @@ const Dictionary_Hash: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode1207} alt="leetcode1027"/>
+                                <Image src={leetcode_img.leetcode1207} alt="leetcode1027"/>
                                 <Image src={newMap找數組} alt="newMap找數組" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
@@ -240,7 +237,7 @@ const Dictionary_Hash: React.FC = () => {
                         <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" >Leetcode第3題</a>
                     </p>
                     <p>
-                        <Image src={leetcode03} alt="leetcode03"/>
+                        <Image src={leetcode_img.leetcode03} alt="leetcode03"/>
                     </p>
                 </div>
                 

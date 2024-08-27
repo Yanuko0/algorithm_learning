@@ -1,52 +1,10 @@
 import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 
-import leetcode144 from "./assets/img/Leetcode/leetcode144.png"
-import leetcode144_01 from "./assets/img/Leetcode/leetcode144_01.png"
-import leetcode94 from "./assets/img/Leetcode/leetcode94.png"
-import leetcode94_01 from "./assets/img/Leetcode/leetcode94_01.png"
-import leetcode145 from "./assets/img/Leetcode/leetcode145.png"
-import leetcode111 from "./assets/img/Leetcode/leetcode111.png"
-import leetcode104 from "./assets/img/Leetcode/leetcode104.png"
-import leetcode226 from "./assets/img/Leetcode/leetcode226.png"
-import leetcode100 from "./assets/img/Leetcode/leetcode100.png"
 
+import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
 
-import tree_001 from "./assets/img/圖解/tree/tree_001.png"
-//深度走訪圖
-import binary_tree_dfs from "./assets/img/圖解/tree/binary_tree_dfs.png"
-import binary_tree_bfs from "./assets/img/圖解/tree/binary_tree_bfs.png"
-import preorder_step1 from "./assets/img/圖解/tree/preorder_step1.png"
-import preorder_step2 from "./assets/img/圖解/tree/preorder_step2.png"
-import preorder_step3 from "./assets/img/圖解/tree/preorder_step3.png"
-import preorder_step4 from "./assets/img/圖解/tree/preorder_step4.png"
-import preorder_step5 from "./assets/img/圖解/tree/preorder_step5.png"
-import preorder_step6 from "./assets/img/圖解/tree/preorder_step6.png"
-import preorder_step7 from "./assets/img/圖解/tree/preorder_step7.png"
-import preorder_step8 from "./assets/img/圖解/tree/preorder_step8.png"
-import preorder_step9 from "./assets/img/圖解/tree/preorder_step9.png"
-import preorder_step10 from "./assets/img/圖解/tree/preorder_step10.png"
-import preorder_step11 from "./assets/img/圖解/tree/preorder_step11.png"
-import binary_search_tree from "./assets/img/圖解/tree/binary_search_tree.png"
-import binary_tree_definition from "./assets/img/圖解/tree/binary_tree_definition.png"
-import binary_tree_terminology from "./assets/img/圖解/tree/binary_tree_terminology.png"
-import array_representation_binary_tree from "./assets/img/圖解/tree/array_representation_binary_tree.png"
-import array_representation_complete_binary_tree from "./assets/img/圖解/tree/array_representation_complete_binary_tree.png"
-//二元樹查詢
-import bst_search_step1 from "./assets/img/圖解/tree/bst_search_step1.png"
-import bst_search_step2 from "./assets/img/圖解/tree/bst_search_step2.png"
-import bst_search_step3 from "./assets/img/圖解/tree/bst_search_step3.png"
-import bst_search_step4 from "./assets/img/圖解/tree/bst_search_step4.png"
-//二元樹刪除
-import bst_remove_case3_step1 from "./assets/img/圖解/tree/bst_remove_case3_step1.png"
-import bst_remove_case3_step2 from "./assets/img/圖解/tree/bst_remove_case3_step2.png"
-import bst_remove_case3_step3 from "./assets/img/圖解/tree/bst_remove_case3_step3.png"
-import bst_remove_case3_step4 from "./assets/img/圖解/tree/bst_remove_case3_step4.png"
-//插入節點刪除節點
-import bst_insert from "./assets/img/圖解/tree/bst_insert.png"
-import bst_remove_case1 from "./assets/img/圖解/tree/bst_remove_case1.png"
-import bst_remove_case2 from "./assets/img/圖解/tree/bst_remove_case2.png"
-
+import tree_img from "@/pages/Algorithm_learning/assets/img/圖解/tree/tree_img"
 
 
 
@@ -397,20 +355,20 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={binary_tree_dfs} alt="深度走訪" />
-                                <Image src={binary_tree_bfs} alt="廣度走訪" style={{display:"none"}}/>
-                                <Image src={tree_001} alt="樹的遍歷" style={{display:"none"}} />
-                                <Image src={preorder_step1} alt="preorder_step1" style={{display:"none"}} />
-                                <Image src={preorder_step2} alt="preorder_step2" style={{display:"none"}} />
-                                <Image src={preorder_step3} alt="preorder_step3" style={{display:"none"}} />
-                                <Image src={preorder_step4} alt="preorder_step4" style={{display:"none"}} />
-                                <Image src={preorder_step5} alt="preorder_step5" style={{display:"none"}} />
-                                <Image src={preorder_step6} alt="preorder_step6" style={{display:"none"}} />
-                                <Image src={preorder_step7} alt="preorder_step7" style={{display:"none"}} />
-                                <Image src={preorder_step8} alt="preorder_step8" style={{display:"none"}} />
-                                <Image src={preorder_step9} alt="preorder_step9" style={{display:"none"}} />
-                                <Image src={preorder_step10} alt="preorder_step10" style={{display:"none"}} />
-                                <Image src={preorder_step11} alt="preorder_step11" style={{display:"none"}} />
+                                <Image src={tree_img.binary_tree_dfs} alt="深度走訪" />
+                                <Image src={tree_img.binary_tree_bfs} alt="廣度走訪" style={{display:"none"}}/>
+                                <Image src={tree_img.tree_001} alt="樹的遍歷" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step1} alt="preorder_step1" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step2} alt="preorder_step2" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step3} alt="preorder_step3" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step4} alt="preorder_step4" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step5} alt="preorder_step5" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step6} alt="preorder_step6" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step7} alt="preorder_step7" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step8} alt="preorder_step8" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step9} alt="preorder_step9" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step10} alt="preorder_step10" style={{display:"none"}} />
+                                <Image src={tree_img.preorder_step11} alt="preorder_step11" style={{display:"none"}} />
                                
                             </Image.PreviewGroup>
                         </div>
@@ -427,22 +385,22 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={binary_search_tree} alt="二元搜尋樹" />
-                                <Image src={binary_tree_definition} alt="binary_tree_definition" style={{display:"none"}}/>
-                                <Image src={binary_tree_terminology} alt="binary_tree_terminology" style={{display:"none"}}/>
-                                <Image src={array_representation_binary_tree} alt="array_representation_binary_tree" style={{display:"none"}}/>
-                                <Image src={array_representation_complete_binary_tree} alt="array_representation_complete_binary_tree" style={{display:"none"}}/>
-                                <Image src={bst_search_step1} alt="bst_search_step1" style={{display:"none"}}/>
-                                <Image src={bst_search_step2} alt="bst_search_step2" style={{display:"none"}}/>
-                                <Image src={bst_search_step3} alt="bst_search_step3" style={{display:"none"}}/>
-                                <Image src={bst_search_step4} alt="bst_search_step4" style={{display:"none"}}/>
-                                <Image src={bst_remove_case3_step1} alt="bst_remove_case3_step1" style={{display:"none"}}/>
-                                <Image src={bst_remove_case3_step2} alt="bst_remove_case3_step2" style={{display:"none"}}/>
-                                <Image src={bst_remove_case3_step3} alt="bst_remove_case3_step3" style={{display:"none"}}/>
-                                <Image src={bst_remove_case3_step4} alt="bst_remove_case3_step4" style={{display:"none"}}/>
-                                <Image src={bst_insert} alt="bst_insert" style={{display:"none"}}/>
-                                <Image src={bst_remove_case1} alt="bst_remove_case1" style={{display:"none"}}/>
-                                <Image src={bst_remove_case2} alt="bst_remove_case2" style={{display:"none"}}/>
+                                <Image src={tree_img.binary_search_tree} alt="二元搜尋樹" />
+                                <Image src={tree_img.binary_tree_definition} alt="binary_tree_definition" style={{display:"none"}}/>
+                                <Image src={tree_img.binary_tree_terminology} alt="binary_tree_terminology" style={{display:"none"}}/>
+                                <Image src={tree_img.array_representation_binary_tree} alt="array_representation_binary_tree" style={{display:"none"}}/>
+                                <Image src={tree_img.array_representation_complete_binary_tree} alt="array_representation_complete_binary_tree" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_search_step1} alt="bst_search_step1" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_search_step2} alt="bst_search_step2" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_search_step3} alt="bst_search_step3" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_search_step4} alt="bst_search_step4" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_remove_case3_step1} alt="bst_remove_case3_step1" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_remove_case3_step2} alt="bst_remove_case3_step2" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_remove_case3_step3} alt="bst_remove_case3_step3" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_remove_case3_step4} alt="bst_remove_case3_step4" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_insert} alt="bst_insert" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_remove_case1} alt="bst_remove_case1" style={{display:"none"}}/>
+                                <Image src={tree_img.bst_remove_case2} alt="bst_remove_case2" style={{display:"none"}}/>
                     
                             </Image.PreviewGroup>
                         </div>
@@ -465,8 +423,8 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode144} alt="leetcode144"/>
-                                <Image src={leetcode144_01} alt="leetcode144_01" style={{display:"none"}}/>
+                                <Image src={leetcode_img.leetcode144} alt="leetcode144"/>
+                                <Image src={leetcode_img.leetcode144_01} alt="leetcode144_01" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -483,8 +441,8 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode94} alt="leetcode94"/>
-                                <Image src={leetcode94_01} alt="leetcode94_01" style={{display:"none"}}/>
+                                <Image src={leetcode_img.leetcode94} alt="leetcode94"/>
+                                <Image src={leetcode_img.leetcode94_01} alt="leetcode94_01" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -501,7 +459,7 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode145} alt="leetcode145"/>
+                                <Image src={leetcode_img.leetcode145} alt="leetcode145"/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -518,7 +476,7 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode111} alt="leetcode111"/>
+                                <Image src={leetcode_img.leetcode111} alt="leetcode111"/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -535,7 +493,7 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode104} alt="leetcode104"/>
+                                <Image src={leetcode_img.leetcode104} alt="leetcode104"/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -552,7 +510,7 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode226} alt="leetcode226"/>
+                                <Image src={leetcode_img.leetcode226} alt="leetcode226"/>
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -569,7 +527,7 @@ const Tree: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode100} alt="leetcode100"/>
+                                <Image src={leetcode_img.leetcode100} alt="leetcode100"/>
                             </Image.PreviewGroup>
                         </div>
                     </p>

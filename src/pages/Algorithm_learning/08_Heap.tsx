@@ -1,8 +1,8 @@
 import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 
-import leetcode215 from "./assets/img/Leetcode/leetcode215.png"
-import leetcode215_01 from "./assets/img/Leetcode/leetcode215_01.png"
+
+import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
 
 //堆圖解
 import min_heap_and_max_heap from "./assets/img/圖解/堆/min_heap_and_max_heap.png"
@@ -207,8 +207,8 @@ const Heap: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode215} alt="leetcode215"/>
-                                <Image src={leetcode215_01} alt="leetcode215_01" style={{display:"none"}}/>
+                                <Image src={leetcode_img.leetcode215} alt="leetcode215"/>
+                                <Image src={leetcode_img.leetcode215_01} alt="leetcode215_01" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
                     </p>

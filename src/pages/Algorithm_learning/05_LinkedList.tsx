@@ -7,12 +7,8 @@ import linkedlist_remove_node from "./assets/img/圖解/linkedlist_remove_node.p
 import 鏈表插入刪除 from "./assets/img/解說/鏈表插入刪除.png"
 import instanceof實現 from "./assets/img/解說/instanceof實現.png"
 import linkedistCommentary from "./assets/img/解說/linkedist_解說.png"
-import leetcode141 from "./assets/img/Leetcode/leetcode141.png"
-import leetcode237 from "./assets/img/Leetcode/leetcode237.png"
-import leetcode83 from "./assets/img/Leetcode/leetcode83.png"
-import leetcode206 from "./assets/img/Leetcode/leetcode206.png"
-import leetcode206_1 from "./assets/img/Leetcode/leetcode206_1.png"
 
+import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
 
 // interface ListNode {
 //     key: string;
@@ -137,7 +133,7 @@ const LinkedList: React.FC = () => {
                         <a href="https://leetcode.com/problems/linked-list-cycle/description/" >Leetcode第141題</a>
                     </p>
                     <div>
-                        <Image src={leetcode141} alt="leetcode141"/>
+                        <Image src={leetcode_img.leetcode141} alt="leetcode141"/>
                     </div>
                 </div>
                 {/*Leetcode第237題*/}
@@ -146,7 +142,7 @@ const LinkedList: React.FC = () => {
                         <a href="https://leetcode.com/problems/delete-node-in-a-linked-list/description/" >Leetcode第237題</a>
                     </p>
                     <p>
-                        <Image src={leetcode237} alt="leetcode237"/>
+                        <Image src={leetcode_img.leetcode237} alt="leetcode237"/>
                     </p>
                 </div>
                  {/*Leetcode第83題*/}
@@ -155,7 +151,7 @@ const LinkedList: React.FC = () => {
                         <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/" >Leetcode第83題</a>
                     </p>
                     <p>
-                        <Image src={leetcode83} alt="leetcode83"/>
+                        <Image src={leetcode_img.leetcode83} alt="leetcode83"/>
                     </p>
                 </div>
                   {/*Leetcode第206題*/}
@@ -170,8 +166,8 @@ const LinkedList: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={leetcode206} alt="leetcode206"/>
-                                <Image src={leetcode206_1} alt="leetcode206_1" style={{display:"none"}}/>
+                                <Image src={leetcode_img.leetcode206} alt="leetcode206"/>
+                                <Image src={leetcode_img.leetcode206_1} alt="leetcode206_1" style={{display:"none"}}/>
                             </Image.PreviewGroup>
                         </div>
                     </p>

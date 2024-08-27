@@ -14,6 +14,7 @@ const Dictionary_Hash = lazy(()=> import('../pages/Algorithm_learning/06_Diction
 const Tree = lazy(()=> import('../pages/Algorithm_learning/07_Tree'))
 const Heap = lazy(()=> import('../pages/Algorithm_learning/08_Heap'))
 const Algorithm = lazy(()=> import('../pages/Algorithm_learning/09_Algorithm'))
+const Dynamic_Programming = lazy (()=> import('../pages/Algorithm_learning/10_Dynamic_Programming'))
 
 
 const router = createHashRouter([
@@ -60,6 +61,10 @@ const router = createHashRouter([
             {
                 path: "Algorithm",
                 element:<Suspense fallback={'加載中'}><Algorithm/></Suspense>
+            },
+            {
+                path: "Dynamic_Programming",
+                element:<Suspense fallback={'加載中'}><Dynamic_Programming/></Suspense>
             },
         ]
     },

@@ -1,8 +1,8 @@
 import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 import queue from "./assets/img/圖解/queue_operations.png"
-import leetcode933 from "./assets/img/Leetcode/leetcode933.png"
 
+import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
 
 const Queue: React.FC = () => {
     
@@ -70,7 +70,7 @@ const Queue: React.FC = () => {
                     <p><a href="https://leetcode.com/problems/number-of-recent-calls/description/" >Leetcode第933題</a></p>
                     <p>
                         <Image 
-                            src={leetcode933} alt=""
+                            src={leetcode_img.leetcode933} alt=""
                         />
                     </p>
                 </div>
