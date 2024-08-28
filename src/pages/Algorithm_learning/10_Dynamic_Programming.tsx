@@ -2,13 +2,31 @@ import { Image } from "antd"
 import "./scss/algorithmPageStyle.scss"
 
 
-import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
+// import leetcode_img from "@/pages/Algorithm_learning/assets/img/Leetcode/leetcode_img"
 
 import dynamic_programming_img from "@/pages/Algorithm_learning/assets/img/圖解/dynamic_programming/dynamic_programming_img"
 
 
 
 const Dynamic_Programming: React.FC = () => {
+
+    // function fn(n) {
+    //     if( n <= 2 ) {
+    //         return 1;
+    //     }
+    //     return fn(n-1) + fn(n-2)
+    // }
+    // console.log( fn(11) )
+    
+    // 動態規劃
+    // function fn( n ) {
+    //     const res = [0,1,1];
+    //     for(let i = 3; i <= n; i++) {
+    //         res[i] = res[i-1] + res[i-2];
+    //     }
+    //     return res[n];
+    // }
+    // console.log( fn(5) )
 
     return (
         <div className="full_page">
@@ -21,23 +39,13 @@ const Dynamic_Programming: React.FC = () => {
                 {/* 介紹字典 */}
                 <div className="diagrambox">
                     <p>
-                        什麼是堆
+                        又稱為DP
                     </p>
                     <p>
-                    一、堆都能用樹來表示,並且一班樹的實現都是利用鏈表<br />
-                    而二元樹是一種特殊的堆,它用完全二元樹表示,卻可以利用樹組實現<br />
-                    平時使用最多的是二元樹, 它可以用完全二元樹表示, 二叉堆易於存儲, 並且便于索引<br />
+                    分治: 子問題都是獨立的, 而獨立可能就會出現 重複的<br />
+                    把分治優化(重複的問題,單獨保存起來)<br />
                     {/* 從根部出發,盡可能深的搜索樹的節點<br /> */}
-                    堆數據結構像樹, 但是, 是通過樹組來實現 (不是通過鏈表:二叉堆)<br />
-                    簡單來說就是把一堆數,弄成數組的結構,但是通過樹來表示,他不是鏈表而是數組.<br />
-                    <br />
-                    二、在堆的實現時, 需要注意: <br />
-                    因為是數組, 所以父子節點的關係就不需要特殊的結構去維護,所以之間通過計算就可以得到,省掉了很多麻煩。如果鏈表結構,就會複雜很多; <br />
-                    完全二叉樹要求葉子節點從左往右填滿, 才能開始填充下一層, 這就保證了不需要對樹組整體進行大片的移動。 這也是隨機儲存結構(數組)的短版:刪除一個元素之後, 整體往前移是比較費時的.這個特性也導致堆在刪除元素的時候, 要把最後一個葉子節點補充道樹根節點的緣由 <br /> 
-                    左: 2 * index + 1 <br />
-                    右: 2 * index + 2 <br />
-                    找父: ( index - 1 ) /2 <br />
-                    <br />
+                   
                                     
                         
                     </p>
@@ -600,7 +608,7 @@ const Dynamic_Programming: React.FC = () => {
 
             <div className="Detailed_introduction">
                 {/*Leetcode第215題*/}
-                <div>
+                {/* <div>
                     <p>
                         <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/description/" >Leetcode第215題</a>
                     </p>
@@ -616,7 +624,7 @@ const Dynamic_Programming: React.FC = () => {
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                </div>        
+                </div>         */}
             </div>
         </div>
     )

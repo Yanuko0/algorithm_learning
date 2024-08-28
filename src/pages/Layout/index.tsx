@@ -46,6 +46,7 @@ const items: MenuItem[] = [
         getItem('第八章-堆', 'Heap'),
         getItem('第九章-算法', 'Algorithm'),
         getItem('第十章-動態規劃', 'Dynamic_Programming'),
+        getItem('第十一章-貪心算法', 'Greedy_Algorithm'),
     ]),
 ];
 
