@@ -5,6 +5,7 @@ import {
     DiffOutlined,
     MenuUnfoldOutlined,
     MenuFoldOutlined,
+    OpenAIOutlined,
 
 } from '@ant-design/icons'
 import './index.scss'
@@ -36,17 +37,22 @@ const { Header, Sider, Footer } = Layout
 const items: MenuItem[] = [
     getItem('首頁', '/', <HomeOutlined />),
     getItem('演算法', 'sub1', <DiffOutlined />, [
-        getItem('第一章-時間複雜度', 'TimeComplexity'),
-        getItem('第二章-空間複雜度', 'SpaceComplexity'),
-        getItem('第三章-棧(堆疊)', 'Stack'),
-        getItem('第四章-對列(佇列)', 'Queue'),
-        getItem('第五章-鏈表(鏈結串列)', 'LinkedList'),
-        getItem('第六章-字典與哈希表', 'Dictionary_Hash'),
-        getItem('第七章-樹', 'Tree'),
-        getItem('第八章-堆', 'Heap'),
-        getItem('第九章-算法', 'Algorithm'),
-        getItem('第十章-動態規劃', 'Dynamic_Programming'),
-        getItem('第十一章-貪心算法', 'Greedy_Algorithm'),
+        getItem('第一章-時間複雜度', '/TimeComplexity'),
+        getItem('第二章-空間複雜度', '/SpaceComplexity'),
+        getItem('第三章-棧(堆疊)', '/Stack'),
+        getItem('第四章-對列(佇列)', '/Queue'),
+        getItem('第五章-鏈表(鏈結串列)', '/LinkedList'),
+        getItem('第六章-字典與哈希表', '/Dictionary_Hash'),
+        getItem('第七章-樹', '/Tree'),
+        getItem('第八章-堆', '/Heap'),
+        getItem('第九章-算法', '/Algorithm'),
+        getItem('第十章-動態規劃', '/Dynamic_Programming'),
+        getItem('第十一章-貪心算法', '/Greedy_Algorithm'),
+    ]),
+    getItem('AI', 'sub2', <OpenAIOutlined/>,[
+        getItem('第一章-人工智能入門', '/AI'),
+        getItem('第二章-如何實現自動化決策', '/AI/Automated_Decision_Making'),
+        getItem('第三章-圖像識別與自然語言處理', '/AI/Image_Recognition'),
     ]),
 ];
 

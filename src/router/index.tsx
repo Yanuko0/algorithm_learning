@@ -17,6 +17,11 @@ const Algorithm = lazy(()=> import('../pages/Algorithm_learning/09_Algorithm'))
 const Dynamic_Programming = lazy (()=> import('../pages/Algorithm_learning/10_Dynamic_Programming'))
 const Greedy_Algorithm = lazy (()=> import('../pages/Algorithm_learning/11_Greedy_Algorithm'))
 
+// 人工智能學習
+const Getting_Started_AI = lazy(()=>import("../pages/AI/01_Getting_Started_AI"))
+const Automated_Decision_Making = lazy(()=>import("../pages/AI/02_Automated_Decision_Making"))
+const Image_Recognition = lazy(()=> import("../pages/AI/03_Image_recognition"))
+
 
 const router = createHashRouter([
     {
@@ -70,6 +75,24 @@ const router = createHashRouter([
             {
                 path: "Greedy_Algorithm",
                 element:<Suspense fallback={'加載中'}><Greedy_Algorithm/></Suspense>
+            },
+        ]
+    },
+    {
+        path: '/AI',
+        element: <Layout/>,
+        children: [
+            {
+                index:true,
+                element:<Suspense fallback={'加載中'}><Getting_Started_AI/></Suspense>
+            },
+            {
+                path: "Automated_Decision_Making",
+                element:<Suspense fallback={'加載中'}><Automated_Decision_Making/></Suspense>
+            },
+            {
+                path: "Image_Recognition",
+                element:<Suspense fallback={'加載中'}><Image_Recognition/></Suspense>
             },
         ]
     },
