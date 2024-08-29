@@ -53,6 +53,11 @@ const items: MenuItem[] = [
         getItem('第一章-人工智能入門', '/AI'),
         getItem('第二章-如何實現自動化決策', '/AI/Automated_Decision_Making'),
         getItem('第三章-圖像識別與自然語言處理', '/AI/Image_Recognition'),
+        getItem('第四章-Python環境搭建', '/AI/Python_Environment_setup'),
+        getItem('第五章-多元線性回歸', '/AI/Multiple_Linear_Regression'),
+        getItem('實戰項目-糖尿病回歸預測', '/AI/Pp01_diabetes_regression_prediction'),
+        getItem('第六章-回歸', '/AI/Logistic_Regression'),
+        getItem('實戰項目-鳶尾花大作戰', '/AI/Pp02_Iris_battle'),
     ]),
 ];
 

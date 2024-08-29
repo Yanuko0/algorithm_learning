@@ -21,6 +21,11 @@ const Greedy_Algorithm = lazy (()=> import('../pages/Algorithm_learning/11_Greed
 const Getting_Started_AI = lazy(()=>import("../pages/AI/01_Getting_Started_AI"))
 const Automated_Decision_Making = lazy(()=>import("../pages/AI/02_Automated_Decision_Making"))
 const Image_Recognition = lazy(()=> import("../pages/AI/03_Image_recognition"))
+const Python_Environment_setup = lazy(()=>import("../pages/AI/04_Python_Environment_setup"))
+const Multiple_Linear_Regression = lazy(()=>import("../pages/AI/05_Multiple_Linear_Regression"))
+const Pp01_diabetes_regression_prediction = lazy(()=>import("../pages/AI/06_Pp01_diabetes_regression_prediction"))
+const Logistic_Regression = lazy(()=>import("../pages/AI/07_Logistic_Regression"))
+const Pp02_Iris_battle = lazy(()=>import("../pages/AI/08_Pp02_Iris_battle"))
 
 
 const router = createHashRouter([
@@ -93,6 +98,26 @@ const router = createHashRouter([
             {
                 path: "Image_Recognition",
                 element:<Suspense fallback={'加載中'}><Image_Recognition/></Suspense>
+            },
+            {
+                path: "Python_Environment_setup",
+                element:<Suspense fallback={'加載中'}><Python_Environment_setup/></Suspense>
+            },
+            {
+                path: "Multiple_Linear_Regression",
+                element:<Suspense fallback={'加載中'}><Multiple_Linear_Regression/></Suspense>
+            },
+            {
+                path: "Pp01_diabetes_regression_prediction",
+                element:<Suspense fallback={'加載中'}><Pp01_diabetes_regression_prediction/></Suspense>
+            },
+            {
+                path: "Logistic_Regression",
+                element:<Suspense fallback={'加載中'}><Logistic_Regression/></Suspense>
+            },
+            {
+                path: "Pp02_Iris_battle",
+                element:<Suspense fallback={'加載中'}><Pp02_Iris_battle/></Suspense>
             },
         ]
     },

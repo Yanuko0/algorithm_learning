@@ -294,13 +294,10 @@ const Image_Recognition: React.FC = () => {
                 <div>
                     <p>背後的技術</p>
                 </div>
-
-
-
             </div>
-            
+            {/*背後的技術*/}
             <div className="Detailed_introduction">
-                {/*背後的技術*/}
+                {/* RNN循環神經網路 */}
                 <div>
                     <p>
                         RNN循環神經網路
@@ -316,9 +313,95 @@ const Image_Recognition: React.FC = () => {
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                </div>        
+                </div> 
+                {/* LSTM長短時記憶      */}
+                <div>
+                    <p>
+                        LSTM長短時記憶
+                    </p>
+                    <p>
+                    <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={ai_img.LSTM} alt="LSTM"/>
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div> 
+                {/* Seq25eq  */}
+                <div>
+                    <p>
+                        Seq25eq
+                    </p>
+                    <p>
+                    <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={ai_img.Seq25eq} alt="Seq25eq"/>
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div> 
             </div>
-
+            <div className="Detailed_introduction">
+                 {/* Attention注意力機制   */}
+                 <div>
+                    <p>
+                        Attention注意力機制
+                    </p>
+                    <p>
+                    <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={ai_img.Attention} alt="Attention"/>
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div>
+                {/* Transformer */}
+                <div>
+                    <p>
+                    Transformer
+                    </p>
+                    <p>
+                    <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={ai_img.Transformer} alt="Attention"/>
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div>
+                {/* Bert GPT */}
+                <div>
+                    <p>
+                        Bert GPT
+                    </p>
+                    <p>
+                    <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={ai_img.BertGPT} alt="leetcode215"/>
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div> 
+            </div>
         </div>
     )
 }

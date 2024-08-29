@@ -36,7 +36,40 @@ import NLP_09 from "./01_AI/NLP_09.png"
 import NLP_10 from "./01_AI/NLP_10.png"
 import RNN from "./01_AI/RNN.png"
 import LSTM from "./01_AI/LSTM.png"
-
+import Seq25eq from "./01_AI/Seq25eq.png"
+import Attention from "./01_AI/Attention注意力機制.png"
+import Transformer from "./01_AI/Transformer.png"
+import BertGPT from "./01_AI/BertGPT.png"
+import Python from "./01_AI/Python.png"
+import Python_01 from "./01_AI/Python_01.png"
+import Python_02 from "./01_AI/Python_02.png"
+import Python_03 from "./01_AI/Python_03.png"
+import PyCharm快捷鍵 from "./01_AI/PyCharm快捷鍵.png"
+import multi_dimensionality from "./01_AI/multi_dimensionality.png"
+import 線性與空間 from "./01_AI/線性與空間.png"
+import 回歸 from "./01_AI/回歸.png"
+import 非線性回歸 from "./01_AI/非線性回歸.png"
+import 線性回歸公式 from "./01_AI/線性回歸.png"
+import 使用幾元的線性回歸 from "./01_AI/使用幾元的線性回歸.png"
+import 求解算法模型 from "./01_AI/求解算法模型.png"
+import 求解算法模型_01 from "./01_AI/求解算法模型_01.png"
+import 求解算法模型_02 from "./01_AI/求解算法模型_02.png"
+import 安裝算法庫 from "./01_AI/安裝算法庫.png"
+import 糖尿病項目1 from "./01_AI/糖尿病項目1.png"
+import 邏輯回歸 from "./01_AI/邏輯回歸.png"
+import 邏輯回歸_01 from "./01_AI/邏輯回歸_01.png"
+import 邏輯回歸_02 from "./01_AI/邏輯回歸_02.png"
+import 邏輯回歸_03 from "./01_AI/邏輯回歸_03.png"
+import 如何求解算法模型 from "./01_AI/如何求解算法模型.png"
+import 邏輯回歸_04 from "./01_AI/邏輯回歸_04.png"
+import 邏輯回歸_05 from "./01_AI/邏輯回歸_05.png"
+import Softmax回歸_01 from "./01_AI/Softmax回歸_01.png"
+import Softmax回歸_02 from "./01_AI/Softmax回歸_02.png"
+import Softmax回歸_03 from "./01_AI/Softmax回歸_03.png"
+import Softmax回歸_04 from "./01_AI/Softmax回歸_04.png"
+import 如何求解算法模型_01 from "./01_AI/如何求解算法模型_01.png"
+import MultiLabel與MultiClass from "./01_AI/MultiLabel與MultiClass.png"
+import 鳶尾花大作戰 from "./01_AI/鳶尾花大作戰.png"
 
 const ai_img = {
     ai_application,
@@ -77,7 +110,40 @@ const ai_img = {
     NLP_10,
     RNN,
     LSTM,
-
+    Seq25eq,
+    Attention,
+    Transformer,
+    BertGPT,
+    Python,
+    Python_01,
+    Python_02,
+    Python_03,
+    PyCharm快捷鍵,
+    multi_dimensionality,
+    線性與空間,
+    回歸,
+    非線性回歸,
+    線性回歸公式,
+    使用幾元的線性回歸,
+    求解算法模型,
+    求解算法模型_01,
+    求解算法模型_02,
+    安裝算法庫,
+    糖尿病項目1,
+    邏輯回歸,
+    邏輯回歸_01,
+    邏輯回歸_02,
+    邏輯回歸_03,
+    如何求解算法模型,
+    邏輯回歸_04,
+    邏輯回歸_05,
+    Softmax回歸_01,
+    Softmax回歸_02,
+    Softmax回歸_03,
+    Softmax回歸_04,
+    如何求解算法模型_01,
+    MultiLabel與MultiClass,
+    鳶尾花大作戰,
 
 }
 
