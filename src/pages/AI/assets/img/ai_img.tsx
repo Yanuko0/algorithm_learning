@@ -70,6 +70,34 @@ import Softmax回歸_04 from "./01_AI/Softmax回歸_04.png"
 import 如何求解算法模型_01 from "./01_AI/如何求解算法模型_01.png"
 import MultiLabel與MultiClass from "./01_AI/MultiLabel與MultiClass.png"
 import 鳶尾花大作戰 from "./01_AI/鳶尾花大作戰.png"
+import 機器學習_01 from "./01_AI/機器學習_01.png"
+import 機器學習_02 from "./01_AI/機器學習_02.png"
+import 機器學習_03 from "./01_AI/機器學習_03.png"
+import 機器學習_04 from "./01_AI/機器學習_04.png"
+import L1_L2正則項 from "./01_AI/正則項.png"
+import L1_L2正則項_01 from "./01_AI/正則項_01.png"
+import 新聞提取 from "./01_AI/新聞提取.png"
+import 新聞提取_01 from "./01_AI/新聞提取_01.png"
+import 梯度下降法 from "./01_AI/梯度下降法.png"
+import 梯度下降法_01 from "./01_AI/梯度下降法_01.png"
+import 梯度下降法_02 from "./01_AI/梯度下降法_02.png"
+import 小批量梯度下降_01 from "./01_AI/小批量梯度下降_01.png"
+import 小批量梯度下降_02 from "./01_AI/小批量梯度下降_02.png"
+import 小批量梯度下降_03 from "./01_AI/小批量梯度下降_03.png"
+import 小批量梯度下降_04 from "./01_AI/小批量梯度下降_04.png"
+import 小批量梯度下降_05 from "./01_AI/小批量梯度下降_05.png"
+import 小批量梯度下降_06 from "./01_AI/小批量梯度下降_06.png"
+import 數據歸一化_01 from "./01_AI/數據歸一化_01.png"
+import 數據歸一化_02 from "./01_AI/數據歸一化_02.png"
+import 手寫圖片識別_01 from "./01_AI/手寫圖片識別01.png"
+import 手寫圖片識別_02 from "./01_AI/手寫圖片識別02.png"
+import 手寫圖片識別_03 from "./01_AI/手寫圖片識別03.png"
+import KMeans_01 from "./01_AI/KMeans_01.png"
+import KMeans_02 from "./01_AI/KMeans_02.png"
+import KMeans_03 from "./01_AI/KMeans_03.png"
+import KMeans_04 from "./01_AI/KMeans_04.png"
+import KMeans_05 from "./01_AI/KMeans_05.png"
+import KMeans_06 from "./01_AI/KMeans_06.png"
 
 const ai_img = {
     ai_application,
@@ -144,6 +172,34 @@ const ai_img = {
     如何求解算法模型_01,
     MultiLabel與MultiClass,
     鳶尾花大作戰,
+    機器學習_01,
+    機器學習_02,
+    機器學習_03,
+    機器學習_04,
+    L1_L2正則項,
+    L1_L2正則項_01,
+    新聞提取,
+    新聞提取_01,
+    梯度下降法,
+    梯度下降法_01,
+    梯度下降法_02,
+    小批量梯度下降_01,
+    小批量梯度下降_02,
+    小批量梯度下降_03,
+    小批量梯度下降_04,
+    小批量梯度下降_05,
+    小批量梯度下降_06,
+    數據歸一化_01,
+    數據歸一化_02,
+    手寫圖片識別_01,
+    手寫圖片識別_02,
+    手寫圖片識別_03,
+    KMeans_01,
+    KMeans_02,
+    KMeans_03,
+    KMeans_04,
+    KMeans_05,
+    KMeans_06,
 
 }
 

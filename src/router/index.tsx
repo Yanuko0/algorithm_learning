@@ -26,6 +26,12 @@ const Multiple_Linear_Regression = lazy(()=>import("../pages/AI/05_Multiple_Line
 const Pp01_diabetes_regression_prediction = lazy(()=>import("../pages/AI/06_Pp01_diabetes_regression_prediction"))
 const Logistic_Regression = lazy(()=>import("../pages/AI/07_Logistic_Regression"))
 const Pp02_Iris_battle = lazy(()=>import("../pages/AI/08_Pp02_Iris_battle"))
+const Regularization_techniques = lazy(()=>import("../pages/AI/09_Regularization_techniques"))
+const Pp03_News_classification = lazy(()=>import("../pages/AI/10_Pp03_News_classification"))
+const Gradient_descent_method = lazy(()=>import("../pages/AI/11_gradient_descent_method"))
+const Data_normalization = lazy(()=>import("../pages/AI/12_Data_normalization"))
+const Pp04_Handwritten_digit_recognition = lazy(()=>import("../pages/AI/13_Pp04_Handwritten_digit_recognition"))
+const KMeans = lazy(()=>import("../pages/AI/14_KMeans"))
 
 
 const router = createHashRouter([
@@ -118,6 +124,30 @@ const router = createHashRouter([
             {
                 path: "Pp02_Iris_battle",
                 element:<Suspense fallback={'加載中'}><Pp02_Iris_battle/></Suspense>
+            },
+            {
+                path: "Regularization_techniques",
+                element:<Suspense fallback={'加載中'}><Regularization_techniques/></Suspense>
+            },
+            {
+                path: "Pp03_News_classification",
+                element:<Suspense fallback={'加載中'}><Pp03_News_classification/></Suspense>
+            },
+            {
+                path: "Gradient_descent_method",
+                element:<Suspense fallback={'加載中'}><Gradient_descent_method/></Suspense>
+            },
+            {
+                path: "Data_normalization",
+                element:<Suspense fallback={'加載中'}><Data_normalization/></Suspense>
+            },
+            {
+                path: "Pp04_Handwritten_digit_recognition",
+                element:<Suspense fallback={'加載中'}><Pp04_Handwritten_digit_recognition/></Suspense>
+            },
+            {
+                path: "KMeans",
+                element:<Suspense fallback={'加載中'}><KMeans/></Suspense>
             },
         ]
     },

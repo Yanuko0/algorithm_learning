@@ -58,6 +58,13 @@ const items: MenuItem[] = [
         getItem('實戰項目-糖尿病回歸預測', '/AI/Pp01_diabetes_regression_prediction'),
         getItem('第六章-回歸', '/AI/Logistic_Regression'),
         getItem('實戰項目-鳶尾花大作戰', '/AI/Pp02_Iris_battle'),
+        getItem('第七章-機器學習之正則化技術', '/AI/Regularization_techniques'),
+        getItem('實戰項目-新聞分類,不再錯過熱門資訊', '/AI/Pp03_News_classification'),
+        getItem('第八章-梯度下降法', '/AI/Gradient_descent_method'),
+        getItem('第九章-數據規一化', '/AI/Data_normalization'),
+        getItem('實戰項目-手寫數字識別', '/AI/Pp04_Handwritten_digit_recognition'),
+        getItem('第十章-KMeans聚類', '/AI/KMeans'),
+
     ]),
 ];
 
