@@ -98,6 +98,28 @@ import KMeans_03 from "./01_AI/KMeans_03.png"
 import KMeans_04 from "./01_AI/KMeans_04.png"
 import KMeans_05 from "./01_AI/KMeans_05.png"
 import KMeans_06 from "./01_AI/KMeans_06.png"
+import KMeans from "./01_AI/KMeans.png"
+import KMeans實現 from "./01_AI/自己實現KMeans.png"
+import GMM_01 from "./01_AI/GMM_01.png"
+import GMM_02 from "./01_AI/GMM_02.png"
+import GMM_03 from "./01_AI/GMM_03.png"
+import 說話人識別_01 from "./01_AI/說話人識別_01.png"
+import 說話人識別_02 from "./01_AI/說話人識別_02.png"
+import 說話人識別_03 from "./01_AI/說話人識別_03.png"
+import 說話人識別實戰_01 from "./01_AI/說話人識別實戰_01.png"
+import 說話人識別實戰_02 from "./01_AI/說話人識別實戰_02.png"
+import 說話人識別實戰_03 from "./01_AI/說話人識別實戰_03.png"
+import 感知機_01 from "./01_AI/感知機_01.png"
+import 感知機_02 from "./01_AI/感知機_02.png"
+import 感知機_03 from "./01_AI/感知機_03.png"
+import 感知機_04 from "./01_AI/感知機_04.png"
+import 神經網路_01 from "./01_AI/神經網路_01.png"
+import 神經網路_02 from "./01_AI/神經網路_02.png"
+import 神經網路_03 from "./01_AI/神經網路_03.png"
+import 神經網路_04 from "./01_AI/神經網路_04.png"
+
+
+
 
 const ai_img = {
     ai_application,
@@ -200,6 +222,25 @@ const ai_img = {
     KMeans_04,
     KMeans_05,
     KMeans_06,
+    KMeans,
+    KMeans實現,
+    GMM_01,
+    GMM_02,
+    GMM_03,
+    說話人識別_01,
+    說話人識別_02,
+    說話人識別_03,
+    說話人識別實戰_01,
+    說話人識別實戰_02,
+    說話人識別實戰_03,
+    感知機_01,
+    感知機_02,
+    感知機_03,
+    感知機_04,
+    神經網路_01,
+    神經網路_02,
+    神經網路_03,
+    神經網路_04,
 
 }
 

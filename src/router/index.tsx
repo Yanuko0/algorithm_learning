@@ -32,7 +32,10 @@ const Gradient_descent_method = lazy(()=>import("../pages/AI/11_gradient_descent
 const Data_normalization = lazy(()=>import("../pages/AI/12_Data_normalization"))
 const Pp04_Handwritten_digit_recognition = lazy(()=>import("../pages/AI/13_Pp04_Handwritten_digit_recognition"))
 const KMeans = lazy(()=>import("../pages/AI/14_KMeans"))
-
+const Pp05_KMeans_accomplish = lazy(()=>import("../pages/AI/15_Pp05_KMeans_accomplish"))
+const Gaussian_Mixture_Model = lazy(()=>import("../pages/AI/16_Gaussian_Mixture_Model"))
+const Pp06_Speaker_identification = lazy(()=>import("../pages/AI/17_Pp06_Speaker_identification"))
+const Perceptron =lazy(()=>import("../pages/AI/18_Perceptron"))
 
 const router = createHashRouter([
     {
@@ -148,6 +151,22 @@ const router = createHashRouter([
             {
                 path: "KMeans",
                 element:<Suspense fallback={'加載中'}><KMeans/></Suspense>
+            },
+            {
+                path: "Pp05_KMeans_accomplish",
+                element:<Suspense fallback={'加載中'}><Pp05_KMeans_accomplish/></Suspense>
+            },
+            {
+                path: "Gaussian_Mixture_Model",
+                element:<Suspense fallback={'加載中'}><Gaussian_Mixture_Model/></Suspense>
+            },
+            {
+                path: "Pp06_Speaker_identification",
+                element:<Suspense fallback={'加載中'}><Pp06_Speaker_identification/></Suspense>
+            },
+            {
+                path: "Perceptron",
+                element:<Suspense fallback={'加載中'}><Perceptron/></Suspense>
             },
         ]
     },

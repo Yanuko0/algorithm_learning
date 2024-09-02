@@ -64,7 +64,10 @@ const items: MenuItem[] = [
         getItem('第九章-數據規一化', '/AI/Data_normalization'),
         getItem('實戰項目-手寫數字識別', '/AI/Pp04_Handwritten_digit_recognition'),
         getItem('第十章-KMeans聚類', '/AI/KMeans'),
-
+        getItem('實戰項目-KMeans實現', '/AI/Pp05_KMeans_accomplish'),
+        getItem('第十一章-高斯混合模型', '/AI/Gaussian_Mixture_Model'),
+        getItem('實戰項目-說話人識別', '/AI/Pp06_Speaker_identification'),
+        getItem('第十二章-感知機與神經網路', '/AI/Perceptron'),
     ]),
 ];
 
