@@ -117,6 +117,30 @@ import 神經網路_01 from "./01_AI/神經網路_01.png"
 import 神經網路_02 from "./01_AI/神經網路_02.png"
 import 神經網路_03 from "./01_AI/神經網路_03.png"
 import 神經網路_04 from "./01_AI/神經網路_04.png"
+import 神經網路_05 from "./01_AI/神經網路_05.png"
+import 神經網路_06 from "./01_AI/神經網路_06.png"
+import 神經網路_07 from "./01_AI/神經網路_07.png"
+import 激活函數_01 from "./01_AI/激活函數_01.png"
+import 激活函數_02 from "./01_AI/激活函數_02.png"
+import 激活函數_03 from "./01_AI/激活函數_03.png"
+import 激活函數_04 from "./01_AI/激活函數_04.png"
+import 激活函數_05 from "./01_AI/激活函數_05.png"
+import 激活函數_06 from "./01_AI/激活函數_06.png"
+import 激活函數_07 from "./01_AI/激活函數_07.png"
+import 激活函數_08 from "./01_AI/激活函數_08.png"
+import 激活函數_09 from "./01_AI/激活函數_09.png"
+import 正向傳播_01 from "./01_AI/正向傳播_01.png"
+import 反向傳播_01 from "./01_AI/反向傳播_01.png"
+import 反向傳播_02 from "./01_AI/反向傳播_02.png"
+import 梯度消失_01 from "./01_AI/梯度消失_01.png"
+import 梯度消失_02 from "./01_AI/梯度消失_02.png"
+import 梯度消失_03 from "./01_AI/梯度消失_03.png"
+import 梯度消失_04 from "./01_AI/梯度消失_04.png"
+import Dropout_01 from "./01_AI/Dropout_01.png"
+import Dropout_02 from "./01_AI/Dropout_02.png"
+import Dropout_03 from "./01_AI/Dropout_03.png"
+import 實戰1 from "./01_AI/實戰1.png"
+import 實戰2 from "./01_AI/實戰2.png"
 
 
 
@@ -241,6 +265,31 @@ const ai_img = {
     神經網路_02,
     神經網路_03,
     神經網路_04,
+    神經網路_05,
+    神經網路_06,
+    神經網路_07,
+    激活函數_01,
+    激活函數_02,
+    激活函數_03,
+    激活函數_04,
+    激活函數_05,
+    激活函數_06,
+    激活函數_07,
+    激活函數_08,
+    激活函數_09,
+    正向傳播_01,
+    反向傳播_01,
+    反向傳播_02,
+    梯度消失_01,
+    梯度消失_02,
+    梯度消失_03,
+    梯度消失_04,
+    Dropout_01,
+    Dropout_02,
+    Dropout_03,
+    實戰1,
+    實戰2,
+    
 
 }
 

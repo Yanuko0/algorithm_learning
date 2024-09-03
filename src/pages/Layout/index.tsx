@@ -68,6 +68,9 @@ const items: MenuItem[] = [
         getItem('第十一章-高斯混合模型', '/AI/Gaussian_Mixture_Model'),
         getItem('實戰項目-說話人識別', '/AI/Pp06_Speaker_identification'),
         getItem('第十二章-感知機與神經網路', '/AI/Perceptron'),
+        getItem('第十三章-激活函數與正反向傳播', '/AI/Activation_function'),
+        getItem('第十四章-梯度消失與Dropout', '/AI/Gradient_Disappears'),
+        getItem('實戰項目-神經網路算法', '/AI/Pp07_Neural_Network_Algorithm'),
     ]),
 ];
 

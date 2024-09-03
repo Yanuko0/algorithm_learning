@@ -35,7 +35,10 @@ const KMeans = lazy(()=>import("../pages/AI/14_KMeans"))
 const Pp05_KMeans_accomplish = lazy(()=>import("../pages/AI/15_Pp05_KMeans_accomplish"))
 const Gaussian_Mixture_Model = lazy(()=>import("../pages/AI/16_Gaussian_Mixture_Model"))
 const Pp06_Speaker_identification = lazy(()=>import("../pages/AI/17_Pp06_Speaker_identification"))
-const Perceptron =lazy(()=>import("../pages/AI/18_Perceptron"))
+const Perceptron = lazy(()=>import("../pages/AI/18_Perceptron"))
+const Activation_function = lazy(()=>import("../pages/AI/19_Activation_function"))
+const Gradient_Disappears = lazy(()=>import("../pages/AI/20_Gradient_Disappears"))
+const Pp07_Neural_Network_Algorithm = lazy(()=>import("../pages/AI/21_Pp07_Neural_Network_Algorithm"))
 
 const router = createHashRouter([
     {
@@ -167,6 +170,18 @@ const router = createHashRouter([
             {
                 path: "Perceptron",
                 element:<Suspense fallback={'加載中'}><Perceptron/></Suspense>
+            },
+            {
+                path: "Activation_function",
+                element:<Suspense fallback={'加載中'}><Activation_function/></Suspense>
+            },
+            {
+                path: "Gradient_Disappears",
+                element:<Suspense fallback={'加載中'}><Gradient_Disappears/></Suspense>
+            },
+            {
+                path: "Pp07_Neural_Network_Algorithm",
+                element:<Suspense fallback={'加載中'}><Pp07_Neural_Network_Algorithm/></Suspense>
             },
         ]
     },
