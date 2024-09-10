@@ -40,6 +40,11 @@ const Activation_function = lazy(()=>import("../pages/AI/19_Activation_function"
 const Gradient_Disappears = lazy(()=>import("../pages/AI/20_Gradient_Disappears"))
 const Pp07_Neural_Network_Algorithm = lazy(()=>import("../pages/AI/21_Pp07_Neural_Network_Algorithm"))
 
+//Nodejs
+const First_Iintroduction_Nodejs = lazy(()=>import("../pages/NodeJs/01_First_Iintroduction_Nodejs"))
+const File_SystemModule = lazy(()=>import("../pages/NodeJs/02_File_SystemModule"))
+const Path_Module = lazy(()=>import("../pages/NodeJs/03_Path_Module"))
+
 const router = createHashRouter([
     {
         path: '/',
@@ -185,6 +190,25 @@ const router = createHashRouter([
             },
         ]
     },
+    {
+        path: '/NodeJs',
+        element:<Layout/>,
+        children:[
+            {
+                index:true,
+                element:<Suspense fallback={'加載中'}><First_Iintroduction_Nodejs/></Suspense>
+            },
+            {
+                path: "File_SystemModule",
+                element:<Suspense fallback={'加載中'}><File_SystemModule/></Suspense>
+            },
+            {
+                path: "Path_Module",
+                element:<Suspense fallback={'加載中'}><Path_Module/></Suspense>
+            },
+
+        ]
+    }
 ])
 
 export default router

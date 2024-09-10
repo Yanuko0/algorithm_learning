@@ -6,6 +6,7 @@ import {
     MenuUnfoldOutlined,
     MenuFoldOutlined,
     OpenAIOutlined,
+    RadarChartOutlined,
 
 } from '@ant-design/icons'
 import './index.scss'
@@ -71,6 +72,11 @@ const items: MenuItem[] = [
         getItem('第十三章-激活函數與正反向傳播', '/AI/Activation_function'),
         getItem('第十四章-梯度消失與Dropout', '/AI/Gradient_Disappears'),
         getItem('實戰項目-神經網路算法', '/AI/Pp07_Neural_Network_Algorithm'),
+    ]),
+    getItem('Node.Js', 'sub3', <RadarChartOutlined/>, [
+        getItem('第一章-初識NodeJs', '/NodeJs'),
+        getItem('第二章-fs文件系統模塊', '/NodeJs/File_SystemModule'),
+        getItem('第三章-path路徑模塊', '/NodeJs/Path_Module'),
     ]),
 ];
 
