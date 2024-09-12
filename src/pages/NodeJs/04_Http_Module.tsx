@@ -7,49 +7,37 @@ import { Image } from "antd"
 import "@/pages/Algorithm_learning/scss/algorithmPageStyle.scss"
 
 
-const Path_Module: React.FC = () => {
+const Http_Module: React.FC = () => {
 
     return (
         <div className="full_page">
-            {/* path路徑模塊 */}
+            {/* http路徑模塊 */}
             <div className="title">
-                path路徑模塊
+                http路徑模塊
             </div>
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        path模塊
+                        http模塊
                     </p>
                     <p>
-                        由Node.js官方提供的、用來處理路徑的模塊。 它提供了一系列的方法和屬性, 用來滿足用戶對路徑的處理需求。
+                        回顧:什麼是客戶端、什麼是服務端?
                     </p>
                     <p>
-                        例如:
-                        <ul>
-                            <li>path.join()方法,用來將多個路徑片段拼接成一個完整的路徑字符串</li>
-                            <li>path.basename()方法,用來從路徑字符串中,將文件名解析出來</li>
-                        </ul>
+                        再網路節點中, 負責消費資源的電腦, 叫做客戶端; 負責對外提供資源的電腦,叫做服務器。
                     </p>
                     <p>
-                        如果要在Js代碼中,使用path模塊,來處理路徑,則需要使用如下的方式先導入它。
+                        由Node.js官方提供的、用來創建Web服務器的模塊,通過http模塊提供的 http.createServer()方法, 就能方便的把一台普通的電腦, 變成一台Web服務器, 從而對外提供Web資源服務。
                     </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_01} alt="path_01" />
-                               
-
-                            </Image.PreviewGroup>
-                        </div>
+                    <p>
+                        如果要希望使用http模塊創建Web服務器, 則需要先導入它:
                     </p>
-                    
+                    <p>
+                        <li>const http = require('http')</li>
+                    </p>
                 </div>
             </div>
-            {/* 路徑拼接 */}
+            {/* http模塊 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
@@ -72,7 +60,7 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_02} alt="path_02" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
@@ -85,12 +73,12 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_03} alt="path_03" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                   
+
                 </div>
             </div>
             {/* 獲取路徑中的中文名 */}
@@ -113,19 +101,19 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_04} alt="path_04" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                    
+
                 </div>
             </div>
             {/* path.basename代碼示例 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                            path.basename代碼示例
+                        path.basename代碼示例
                     </p>
                     <p className="diagram">
                         <div className="commentaryBox">
@@ -135,11 +123,11 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_05} alt="path_05" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
-                    </p>   
+                    </p>
                     <p className="diagram">
                         <div className="commentaryBox">
                             <Image.PreviewGroup
@@ -148,15 +136,15 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_06} alt="path_06" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
-                    </p>   
+                    </p>
                 </div>
             </div>
-             {/* 獲取路徑中的文件擴展名 */}
-             <div className="introduce">
+            {/* 獲取路徑中的文件擴展名 */}
+            <div className="introduce">
                 <div className="diagrambox">
                     <p>
                         獲取路徑中的文件擴展名
@@ -178,11 +166,11 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_07} alt="path_07" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
-                    </p>         
+                    </p>
                 </div>
             </div>
             {/* 獲取路徑中的文件擴展名 */}
@@ -199,18 +187,18 @@ const Path_Module: React.FC = () => {
                                 }}
                             >
                                 <Image src={node_img.path_08} alt="path_08" />
-                               
+
 
                             </Image.PreviewGroup>
                         </div>
-                    </p>      
+                    </p>
                 </div>
             </div>
             {/* 綜合案例 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                         將html拆分成css/js/html
+                        將html拆分成css/js/html
                     </p>
                     <p>
                         實現步驟
@@ -228,7 +216,7 @@ const Path_Module: React.FC = () => {
                         <li>自定義resolveJS方法,來寫入index.js腳本文件</li>
                         <li>自定義resolveHTML方法,來寫入index.html文件</li>
                     </ul>
-                   
+
                     <p className="diagram">
                         <div className="commentaryBox">
                             <Image.PreviewGroup
@@ -286,7 +274,7 @@ const Path_Module: React.FC = () => {
                     </p>
                 </div>
             </div>
-            
+
             {/* fs模塊-路徑動態拼接問題 */}
             <div className="introduce">
                 <div className="diagrambox">
@@ -321,10 +309,10 @@ const Path_Module: React.FC = () => {
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                    
-                  
-                    
-                    
+
+
+
+
                 </div>
             </div>
             {/* fs模塊-完美解決動態拼接問題 */}
@@ -347,11 +335,11 @@ const Path_Module: React.FC = () => {
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                    
+
                 </div>
             </div>
-             {/* 實作案例時鐘案例 */}
-             <div className="introduce">
+            {/* 實作案例時鐘案例 */}
+            <div className="introduce">
                 <div className="diagrambox">
                     <p>
                         實作-時鐘案例
@@ -376,12 +364,12 @@ const Path_Module: React.FC = () => {
                             <li>重複調用fs.writeFile()寫入同一個文建,新寫入的內容會覆蓋之前的舊內容</li>
                         </ul>
                     </p>
-                    
+
                 </div>
             </div>
-            
+
         </div>
     )
 }
 
-export default Path_Module
+export default Http_Module

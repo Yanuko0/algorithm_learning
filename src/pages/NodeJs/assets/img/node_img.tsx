@@ -27,6 +27,7 @@ import path_10 from "./01Nodejs/path_10.png"
 import path_11 from "./01Nodejs/path_11.png"
 import path_12 from "./01Nodejs/path_12.png"
 import path_13 from "./01Nodejs/path_13.png"
+import path_時鐘案例 from "./01Nodejs/path_時鐘案例.png"
 
 const node_img = {
     fs_01,
@@ -58,6 +59,7 @@ const node_img = {
     path_11,
     path_12,
     path_13,
+    path_時鐘案例,
 }
 
 export default node_img

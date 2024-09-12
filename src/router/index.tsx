@@ -44,6 +44,7 @@ const Pp07_Neural_Network_Algorithm = lazy(()=>import("../pages/AI/21_Pp07_Neura
 const First_Iintroduction_Nodejs = lazy(()=>import("../pages/NodeJs/01_First_Iintroduction_Nodejs"))
 const File_SystemModule = lazy(()=>import("../pages/NodeJs/02_File_SystemModule"))
 const Path_Module = lazy(()=>import("../pages/NodeJs/03_Path_Module"))
+const Http_Module = lazy(()=>import("../pages/NodeJs/04_Http_Module"))
 
 const router = createHashRouter([
     {
@@ -205,6 +206,10 @@ const router = createHashRouter([
             {
                 path: "Path_Module",
                 element:<Suspense fallback={'加載中'}><Path_Module/></Suspense>
+            },
+            {
+                path: "Http_Module",
+                element:<Suspense fallback={'加載中'}><Http_Module/></Suspense>
             },
 
         ]
