@@ -37,83 +37,75 @@ const Http_Module: React.FC = () => {
                     </p>
                 </div>
             </div>
-            {/* http模塊 */}
+            {/* 進一步理解http模塊的作用 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        路徑拼接
+                        進一步理解http模塊的作用
                     </p>
                     <p>
-                        path.join()語法格式
+                        服務器和普通電腦的區別,在於服務器上安裝了web服務器軟件,例如:IIS 、Apache等。通過安裝這些服務器軟件,就能把一台普通的電腦變成一台web服務器
                     </p>
-                    <p>
-                        使用fs.readFile()方法,可以把多個路徑片段拼接為完整的路徑字符串,語法格是如下:
-                    </p>
-                    <p>
-                        <li>path.join([...paths])</li>
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_02} alt="path_02" />
-
-
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_03} alt="path_03" />
-
-
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-
                 </div>
             </div>
-            {/* 獲取路徑中的中文名 */}
+            {/* 服務器相關的概念-IP地址 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        獲取路徑中的中文名
+                        IP地址
                     </p>
                     <p>
-                        path.basename()的語法格式
+                       就是互聯網上每一台計算機的唯一地址, 因此IP地址具有唯一性。如果把"個人電腦"比做一台電話,那麼ip地址就相當於電話號碼,只有在知道對方ip地址的前提下,才能對應的電腦之間進行數據通信。
                     </p>
                     <p>
-                        可以獲取路徑中的最後一部分, 經常通過這個方法獲取路徑中的文件名, 語法格是如下:
+                        IP地址的格式:通常用"點分十進制" 表示成(a.b.c.d)的形式,其中, a,b,c,d都是0~255之間的十進制整數。例如:用點分十表示的ip地址(192.168.1.1)
                     </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_04} alt="path_04" />
-
-
-                            </Image.PreviewGroup>
-                        </div>
+                    <p>
+                        <ul>
+                            <li>
+                                互聯網中每台Web服務器, 都有自己的ip地址, 例如大家可以在windowns的終端運行ping www.baidu.com 令, 即可查看到百度服務器的ip地址。
+                            </li>
+                            <li>
+                                在開發期間, 自己的電腦既是一台服務器, 也是一個客戶端, 為了方便測試, 可以在自己的瀏覽器中輸入 127.0.0.1這個ip地址,就能把自己的電腦當作一台服務器進行訪問了。
+                            </li>
+                            
+                        </ul>
                     </p>
-
                 </div>
             </div>
-            {/* path.basename代碼示例 */}
+            {/* 域名和域名服務器 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        path.basename代碼示例
+                        域名和域名服務器
+                    </p>
+                    <p>
+                    盡管ip地址能夠唯一地標記網路上的計算機,但ip地址是一長串數字,不直觀,而且不便於記憶, 於是人們又發明另一套 字符型的地址方案, 即所謂的域名地址。
+                    </p>
+                    <p>
+                        注意
+                        <ul>
+                            <li>
+                                單純使用ip地址,互聯網中的電腦也能正常工作。但是有了域名的加持,能讓互聯網的世界變更加方便。
+                            </li>
+                            <li>
+                                在開發測試期間, 127.0.0.1對應的域名是localhost, 它們都代表我們自己的這台電腦, 在使用效果上沒有區別。
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            {/* 端口號 */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                         端口號
+                    </p>
+                    <p>
+                        計算機中的端口號, 就好像是現實生活中的門牌號一樣。 通過門牌號,外賣小哥可以在在整棟大樓眾多的房間中,準確把外賣送到你手中
+                    </p>
+                    <p>
+                        同樣的道理, 在一台電腦中, 可以運行成百上千個web服務。 每個web服務都對應一個唯一的端口號,客戶端發送過來的網路請求,通過端口號, 可以被準確地交給對應的web服務進行處理。
                     </p>
                     <p className="diagram">
                         <div className="commentaryBox">
@@ -122,20 +114,7 @@ const Http_Module: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={node_img.path_05} alt="path_05" />
-
-
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_06} alt="path_06" />
+                                <Image src={node_img.http_01} alt="http_01" />
 
 
                             </Image.PreviewGroup>
@@ -143,80 +122,36 @@ const Http_Module: React.FC = () => {
                     </p>
                 </div>
             </div>
-            {/* 獲取路徑中的文件擴展名 */}
+
+            {/* 創建最基本的web服務器 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        獲取路徑中的文件擴展名
+                        創建web服務器的基本步驟
                     </p>
                     <p>
-                        path.extname()的語法格式
-                    </p>
-                    <p>
-                        使用path.extname()方法,可以獲取路徑中的擴展名部分,語法格式如下
-                    </p>
-                    <p>
-                        path
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_07} alt="path_07" />
-
-
-                            </Image.PreviewGroup>
-                        </div>
+                        <ul>
+                            <li>1.導入http模塊</li>
+                            <li>2.創建web服務器實例</li>
+                            <li>3.為服務器實利綁定request事件,監聽客戶端的請求</li>
+                            <li>4.啟動服務器</li>
+                        </ul>
                     </p>
                 </div>
             </div>
-            {/* 獲取路徑中的文件擴展名 */}
+            {/* 步驟1-導入http模塊 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        獲取路徑中的文件擴展名
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_08} alt="path_08" />
-
-
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-                </div>
-            </div>
-            {/* 綜合案例 */}
-            <div className="introduce">
-                <div className="diagrambox">
-                    <p>
-                        將html拆分成css/js/html
+                       步驟
                     </p>
                     <p>
-                        實現步驟
+                        1.導入http模塊
                     </p>
-                    <ul>
-                        <li>
-                            創建兩個正則表達式, 分別用來匹配style和script
-                        </li>
-                        <li>
-                            使用fs模塊, 讀取需要被處理的HTML文件
-                        </li>
-                        <li>
-                            自定義resolveCSS方法,來寫入index.css樣式文件
-                        </li>
-                        <li>自定義resolveJS方法,來寫入index.js腳本文件</li>
-                        <li>自定義resolveHTML方法,來寫入index.html文件</li>
-                    </ul>
-
+                    <p>
+                        如果希望在自己電腦上創建一個web服務器,從而對外提供web服務,則需要導入
+                        http模塊:
+                    </p>
                     <p className="diagram">
                         <div className="commentaryBox">
                             <Image.PreviewGroup
@@ -224,7 +159,56 @@ const Http_Module: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={node_img.path_09} alt="path_09" />
+                                <Image src={node_img.http_02} alt="http_02" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                    <p>
+                         2.創建一個web服務器的實例
+                    </p>
+                    <p>
+                        調用http.createServer()方法,即可快速創建一個web服務器實例:
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.http_03} alt="http_03" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                    <p>
+                        3.為服務器實例綁定request事件
+                    </p>
+                    <p>為服務器實例綁定request事件,即可監聽客戶端發送過來的網路請求</p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.http_04} alt="http_04" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                    <p>
+                        4.步驟4-啟動服務器
+                    </p>
+                    <p>
+                        調用服務器實例的.listen()方法, 即可啟動當前的web服務器實例:
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.http_05} alt="http_05" />
                             </Image.PreviewGroup>
                         </div>
                     </p>
@@ -235,58 +219,27 @@ const Http_Module: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={node_img.path_10} alt="path_10" />
+                                <Image src={node_img.http_06} alt="http_06" />
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_11} alt="path_11" />
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_12} alt="path_12" />
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.path_13} alt="path_13" />
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
+                   
                 </div>
             </div>
 
-            {/* fs模塊-路徑動態拼接問題 */}
+            {/* 創建最基本的web服務器 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        fs模塊-路徑動態拼接問題
+                        req請求對象
                     </p>
-                    <p>
-                        在使用fs模塊操作文件時, 如果提供的操作路徑是以./或../開頭的相對路徑時,很容易出現動態路徑拼接錯誤的問題
-                    </p>
-                    <p>
-                        原因: 代碼在運行的時候, 會以執行node命令時所處的目錄, 動態拼接被操作文件的完整路徑
-                    </p>
+                   <p>
+                    只要服務器接收到了客戶端的請求, 就會調用server.on()為服務器實例綁定request事件處理函數
+                   </p>
+                   <p>
+                    如果想在事件處理函數中,訪問與客戶端相關的數據或屬性, 可以使用如下的方式:
+                   </p>
+                   
                     <p className="diagram">
                         <div className="commentaryBox">
                             <Image.PreviewGroup
@@ -294,25 +247,10 @@ const Http_Module: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={node_img.fs_13} alt="fs_13" />
+                                <Image src={node_img.http_07} alt="http_07" />
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.fs_14} alt="fs_14" />
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-
-
-
-
                 </div>
             </div>
             {/* fs模塊-完美解決動態拼接問題 */}

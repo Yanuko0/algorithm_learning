@@ -28,6 +28,13 @@ import path_11 from "./01Nodejs/path_11.png"
 import path_12 from "./01Nodejs/path_12.png"
 import path_13 from "./01Nodejs/path_13.png"
 import path_時鐘案例 from "./01Nodejs/path_時鐘案例.png"
+import http_01 from "./01Nodejs/http_01.png"
+import http_02 from "./01Nodejs/http_02.png"
+import http_03 from "./01Nodejs/http_03.png"
+import http_04 from "./01Nodejs/http_04.png"
+import http_05 from "./01Nodejs/http_05.png"
+import http_06 from "./01Nodejs/http_06.png"
+import http_07 from "./01Nodejs/http_07.png"
 
 const node_img = {
     fs_01,
@@ -60,6 +67,13 @@ const node_img = {
     path_12,
     path_13,
     path_時鐘案例,
+    http_01,
+    http_02,
+    http_03,
+    http_04,
+    http_05,
+    http_06,
+    http_07,
 }
 
 export default node_img
