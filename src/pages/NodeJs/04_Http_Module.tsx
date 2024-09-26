@@ -24,7 +24,7 @@ const Http_Module: React.FC = () => {
                         回顧:什麼是客戶端、什麼是服務端?
                     </p>
                     <p>
-                        再網路節點中, 負責消費資源的電腦, 叫做客戶端; 負責對外提供資源的電腦,叫做服務器。
+                        在網路節點中, 負責消費資源的電腦, 叫做客戶端; 負責對外提供資源的電腦,叫做服務器。
                     </p>
                     <p>
                         由Node.js官方提供的、用來創建Web服務器的模塊,通過http模塊提供的 http.createServer()方法, 就能方便的把一台普通的電腦, 變成一台Web服務器, 從而對外提供Web資源服務。
@@ -251,16 +251,27 @@ const Http_Module: React.FC = () => {
                             </Image.PreviewGroup>
                         </div>
                     </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.req_01} alt="req_01" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
                 </div>
             </div>
-            {/* fs模塊-完美解決動態拼接問題 */}
+            {/* res響應對象 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        fs模塊-完美解決動態拼接問題
+                         res響應對象
                     </p>
                     <p>
-                        用__dirname 表示當前文件所處的目錄,解決動態拼接問題
+                        在服務器的request事件處理函數中,如果想訪問服務器相關的數據或是屬性,可以使用如下的方式
                     </p>
                     <p className="diagram">
                         <div className="commentaryBox">
@@ -269,18 +280,18 @@ const Http_Module: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={node_img.fs_16} alt="fs_16" />
+                                <Image src={node_img.req_02} alt="req_02" />
                             </Image.PreviewGroup>
                         </div>
                     </p>
 
                 </div>
             </div>
-            {/* 實作案例時鐘案例 */}
+            {/* 解決中文亂碼問題 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        實作-時鐘案例
+                      解決中文亂碼問題
                     </p>
                     <p className="diagram">
                         <div className="commentaryBox">
@@ -289,22 +300,106 @@ const Http_Module: React.FC = () => {
                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                 }}
                             >
-                                <Image src={node_img.path_時鐘案例} alt="path_時鐘案例" />
+                                <Image src={node_img.req_03} alt="req_03" />
                             </Image.PreviewGroup>
                         </div>
                     </p>
-                    <p>
-                        案例的兩個注意點
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.req_04} alt="req_04" />
+                            </Image.PreviewGroup>
+                        </div>
                     </p>
+                
+                </div>
+            </div>
+            {/* 根據不同的url響應不同的html */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                      根據不同的url響應不同的html
+                    </p>
+                    <p>核心實現步驟</p>
                     <p>
                         <ul>
-                            <li>fs.writeFile()方法只能用來創建文建, 不能用來創建路徑</li>
-                            <li>重複調用fs.writeFile()寫入同一個文建,新寫入的內容會覆蓋之前的舊內容</li>
+                            <li>獲取請求的url地址</li>
+                            <li>設置默認的響應內容為404 Not found</li>
+                            <li>判斷用戶請求的是否為 / 或 /index.html 首頁</li>
+                            <li>判斷用戶請求的是否為 /about.html 關於頁面</li>
+                            <li>設置Content-Type響應頭,防止中文亂碼</li>
+                            <li>使用res.end()把內容響應給客戶端</li>
                         </ul>
                     </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.req_05} alt="req_05" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            {/* clock時鐘的web服務器案例 */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                      clock時鐘的web服務器案例
+                    </p>
+                    <p>核心思路</p>
+                    <p>
+                        <ul>
+                            <li>把文件的實際存放路徑,作為每個資源的請求url地址</li>
+                        </ul>
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.clock_01} alt="clock_01" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    <p>實現步驟</p>
+                    <p>
+                        <ul>
+                            <li>1.導入需要的模塊</li>
+                            <li>2.創建基本的web服務器</li>
+                            <li>3.將資源請求的url地址映射為文件的存放路徑</li>
+                            <li>4.讀取文件的內容並響應給客戶端</li>
+                            <li>5.優化資源的請求路徑</li>
+                            
+                        </ul>
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.clock_02} alt="clock_02" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+           
+
 
                 </div>
             </div>
+
 
         </div>
     )

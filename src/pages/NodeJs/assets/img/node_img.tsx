@@ -35,6 +35,13 @@ import http_04 from "./01Nodejs/http_04.png"
 import http_05 from "./01Nodejs/http_05.png"
 import http_06 from "./01Nodejs/http_06.png"
 import http_07 from "./01Nodejs/http_07.png"
+import req_01 from "./01Nodejs/req_01.png"
+import req_02 from "./01Nodejs/req_02.png"
+import req_03 from "./01Nodejs/req_03.png"
+import req_04 from "./01Nodejs/req_04.png"
+import req_05 from "./01Nodejs/req_05.png"
+import clock_01 from "./01Nodejs/clock_01.png"
+import clock_02 from "./01Nodejs/clock_02.png"
 
 const node_img = {
     fs_01,
@@ -74,6 +81,13 @@ const node_img = {
     http_05,
     http_06,
     http_07,
+    req_01,
+    req_02,
+    req_03,
+    req_04,
+    req_05,
+    clock_01,
+    clock_02,
 }
 
 export default node_img
