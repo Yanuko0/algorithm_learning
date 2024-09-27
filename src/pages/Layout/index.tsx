@@ -78,6 +78,8 @@ const items: MenuItem[] = [
         getItem('第二章-fs文件系統模塊', '/NodeJs/File_SystemModule'),
         getItem('第三章-path路徑模塊', '/NodeJs/Path_Module'),
         getItem('第四章-http路徑模塊', '/NodeJs/Http_Module'),
+        getItem('第五章-模塊化', '/NodeJs/Modular'),
+        getItem('第六章-npm與包', '/NodeJs/NpmAndPackages'),
     ]),
 ];
 

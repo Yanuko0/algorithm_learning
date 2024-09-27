@@ -42,6 +42,23 @@ import req_04 from "./01Nodejs/req_04.png"
 import req_05 from "./01Nodejs/req_05.png"
 import clock_01 from "./01Nodejs/clock_01.png"
 import clock_02 from "./01Nodejs/clock_02.png"
+import 模塊化_01 from "./01Nodejs/模塊化_01.png"
+import 模塊化_02 from "./01Nodejs/模塊化_02.png"
+import 模塊化_03 from "./01Nodejs/模塊化_03.png"
+import 模塊化_04 from "./01Nodejs/模塊化_04.png"
+import 模塊化_05 from "./01Nodejs/模塊化_05.png"
+import 模塊化_06 from "./01Nodejs/模塊化_06.png"
+import 模塊化_07 from "./01Nodejs/模塊化_07.png"
+import exports_01 from "./01Nodejs/exports_01.png"
+import exports_02 from "./01Nodejs/exports_02.png"
+import exports_03 from "./01Nodejs/exports_03.png"
+import exports_04 from "./01Nodejs/exports_04.png"
+import npm_01 from "./01Nodejs/npm_01.png"
+import npm_02 from "./01Nodejs/npm_02.png"
+import npm_03 from "./01Nodejs/npm_03.png"
+import npm_04 from "./01Nodejs/npm_04.png"
+import npm_05 from "./01Nodejs/npm_05.png"
+import npm_06 from "./01Nodejs/npm_06.png"
 
 const node_img = {
     fs_01,
@@ -88,6 +105,23 @@ const node_img = {
     req_05,
     clock_01,
     clock_02,
+    模塊化_01,
+    模塊化_02,
+    模塊化_03,
+    模塊化_04,
+    模塊化_05,
+    模塊化_06,
+    模塊化_07,
+    exports_01,
+    exports_02,
+    exports_03,
+    exports_04,
+    npm_01,
+    npm_02,
+    npm_03,
+    npm_04,
+    npm_05,
+    npm_06,
 }
 
 export default node_img

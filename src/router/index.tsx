@@ -45,6 +45,8 @@ const First_Iintroduction_Nodejs = lazy(()=>import("../pages/NodeJs/01_First_Iin
 const File_SystemModule = lazy(()=>import("../pages/NodeJs/02_File_SystemModule"))
 const Path_Module = lazy(()=>import("../pages/NodeJs/03_Path_Module"))
 const Http_Module = lazy(()=>import("../pages/NodeJs/04_Http_Module"))
+const Modular = lazy(()=>import("../pages/NodeJs/05_Modular"))
+const NpmAndPackages = lazy(()=>import("../pages/NodeJs/06_NpmAndPackages"))
 
 const router = createHashRouter([
     {
@@ -211,6 +213,15 @@ const router = createHashRouter([
                 path: "Http_Module",
                 element:<Suspense fallback={'加載中'}><Http_Module/></Suspense>
             },
+            {
+                path: "Modular",
+                element:<Suspense fallback={'加載中'}><Modular/></Suspense>
+            },
+            {
+                path: "NpmAndPackages",
+                element:<Suspense fallback={'加載中'}><NpmAndPackages/></Suspense>
+            },
+
 
         ]
     }
