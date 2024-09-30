@@ -349,6 +349,228 @@ const NpmAndPackages: React.FC = () => {
 
                 </div>
             </div>
+             {/* 包的分類 */}
+             <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                        包的分類
+                    </p>
+                    <p>
+                          1.項目包:安裝到項目的node_modules目錄中的包
+                        <ul>
+                            <li>開發依賴包(被記錄到devDependencies節點中的包,只在開發期間會用到)</li>
+                            <li>核心依賴包(被記錄到dependencies節點中的包,在開發期間和項目上線之後都會用到)</li>
+                        </ul>
+                    </p>
+                    
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_01} alt="包_01" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    <p>
+                        2.全局包:在執行npm install 命令時, 如果提供了-g參數, 則會把包安裝為全局包。
+                        全局包會被安裝到 C:\User\用戶目錄\AppData\Roaming\npm\node_modules目錄下。
+                    </p>
+
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_02} alt="包_02" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    <p>
+                        <ul>
+                            注意:
+                            <li>只有工具性質的包, 才有全局安裝的必要性。因為他們提供了好用的終端命令</li>
+                            <li>判斷某個包是否需要全局安裝後才能使用,可以參考官方提供的使用說明即可</li>
+                        </ul>
+                        
+                    </p>
+
+
+                    <p>
+                        2.i5ting_toc是一個可以把md文檔轉為html頁面的小工具,使用步驟如下:
+                    </p>
+
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_03} alt="包_03" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                </div>
+            </div>
+            {/* 規範的包結構 */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                         規範的包結構
+                    </p>
+                    <p>
+                        在清楚包的概念,以及如何下載和使用包之後,接下來深入了解包的內部結構。
+                    </p>
+                    <p>
+                        一個規範的包, 它的組成結構,必須符合以下三點要求:
+                        <ul>
+                            <li>包必須以單獨的目錄而存在</li>
+                            <li>包的頂級目錄下必須包含package.json這個包管理配置文件</li>
+                            <li>package.json中必須包含name,version,main這三個屬性, 分別代表包的名字、版本號、包的入口。</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            {/* 開發屬於自己的包 */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                          開發屬於自己的包
+                    </p>
+                    <p>
+                        1.需要實現的功能
+                        <ul>
+                            <li>格式化日期</li>
+                            <li>轉義HTML中的特殊字符</li>
+                            <li>還原HTML中的特殊字符</li>
+
+                        </ul>
+                    </p>
+                   
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_04} alt="包_04" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_05} alt="包_05" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    <p>
+                        2.初始化包的基本結構
+                        <ul>
+                            <li>新建 xxx-tools文件夾,作為包的根目錄</li>
+                            <li>在 xxx-tools文件夾新建
+                                <ul>
+                                    <li>package.json(包管理配置文件)</li>
+                                    <li>index.js(包的入口文件)</li>
+                                    <li>README.md(包的說明文檔)</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </p>
+                    <p>
+                        3.初始化package.json
+                        <ul>
+                            <li>新建 xxx-tools文件夾,作為包的根目錄</li>
+                            <li>在 xxx-tools文件夾新建
+                                <ul>
+                                    <li>package.json(包管理配置文件)</li>
+                                    <li>index.js(包的入口文件)</li>
+                                    <li>README.md(包的說明文檔)</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </p>
+
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_06} alt="包_06" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    <p>
+                        4.在index.js中定義格式化時間的方法
+                        <ul>
+                            <li>新建 xxx-tools文件夾,作為包的根目錄</li>
+                            <li>在 xxx-tools文件夾新建
+                                <ul>
+                                    <li>package.json(包管理配置文件)</li>
+                                    <li>index.js(包的入口文件)</li>
+                                    <li>README.md(包的說明文檔)</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </p>
+
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_07} alt="包_07" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    <p>
+                        5.在index.js中定義轉義HTML的方法
+                    </p>
+                    <p className="diagram">
+                        <div className="commentaryBox">
+                            <Image.PreviewGroup
+                                preview={{
+                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                }}
+                            >
+                                <Image src={node_img.包_08} alt="包_08" />
+                            </Image.PreviewGroup>
+                        </div>
+                    </p>
+
+                    
+                    <p>
+                        6.在index.js中定義還原HTML的方法
+                    </p>
+
+
+
+                </div>
+            </div>
 
 
         </div>

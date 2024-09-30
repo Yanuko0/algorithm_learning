@@ -59,6 +59,14 @@ import npm_03 from "./01Nodejs/npm_03.png"
 import npm_04 from "./01Nodejs/npm_04.png"
 import npm_05 from "./01Nodejs/npm_05.png"
 import npm_06 from "./01Nodejs/npm_06.png"
+import 包_01 from "./01Nodejs/包_01.png"
+import 包_02 from "./01Nodejs/包_02.png"
+import 包_03 from "./01Nodejs/包_03.png"
+import 包_04 from "./01Nodejs/包_04.png"
+import 包_05 from "./01Nodejs/包_05.png"
+import 包_06 from "./01Nodejs/包_06.png"
+import 包_07 from "./01Nodejs/包_07.png"
+import 包_08 from "./01Nodejs/包_08.png"
 
 const node_img = {
     fs_01,
@@ -122,6 +130,15 @@ const node_img = {
     npm_04,
     npm_05,
     npm_06,
+    包_01,
+    包_02,
+    包_03,
+    包_04,
+    包_05,
+    包_06,
+    包_07,
+    包_08,
+
 }
 
 export default node_img
