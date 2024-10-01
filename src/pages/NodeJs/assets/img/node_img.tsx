@@ -67,6 +67,13 @@ import 包_05 from "./01Nodejs/包_05.png"
 import 包_06 from "./01Nodejs/包_06.png"
 import 包_07 from "./01Nodejs/包_07.png"
 import 包_08 from "./01Nodejs/包_08.png"
+import 包_09 from "./01Nodejs/包_09.png"
+import 包_10 from "./01Nodejs/包_10.png"
+import 包_11 from "./01Nodejs/包_11.png"
+import 包_12 from "./01Nodejs/包_12.png"
+import 包_13 from "./01Nodejs/包_13.png"
+import 包_14 from "./01Nodejs/包_14.png"
+import 模塊加載_01 from "./01Nodejs/模塊加載_01.png"
 
 const node_img = {
     fs_01,
@@ -138,6 +145,13 @@ const node_img = {
     包_06,
     包_07,
     包_08,
+    包_09,
+    包_10,
+    包_11,
+    包_12,
+    包_13,
+    包_14,
+    模塊加載_01,
 
 }
 

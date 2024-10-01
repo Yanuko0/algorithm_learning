@@ -80,6 +80,8 @@ const items: MenuItem[] = [
         getItem('第四章-http路徑模塊', '/NodeJs/Http_Module'),
         getItem('第五章-模塊化', '/NodeJs/Modular'),
         getItem('第六章-npm與包', '/NodeJs/NpmAndPackages'),
+        getItem('第七章-模塊加載機制', '/NodeJs/Module_LoadingMechanism'),
+        getItem('第八章-Express學習', '/NodeJs/Express'),
     ]),
 ];
 

@@ -47,6 +47,8 @@ const Path_Module = lazy(()=>import("../pages/NodeJs/03_Path_Module"))
 const Http_Module = lazy(()=>import("../pages/NodeJs/04_Http_Module"))
 const Modular = lazy(()=>import("../pages/NodeJs/05_Modular"))
 const NpmAndPackages = lazy(()=>import("../pages/NodeJs/06_NpmAndPackages"))
+const Module_LoadingMechanism = lazy(()=> import("../pages/NodeJs/07_Module_LoadingMechanism"))
+const Express = lazy(()=>import("../pages/NodeJs/08_Express"))
 
 const router = createHashRouter([
     {
@@ -220,6 +222,14 @@ const router = createHashRouter([
             {
                 path: "NpmAndPackages",
                 element:<Suspense fallback={'加載中'}><NpmAndPackages/></Suspense>
+            },
+            {
+                path: "Module_LoadingMechanism",
+                element:<Suspense fallback={'加載中'}><Module_LoadingMechanism/></Suspense>
+            },
+            {
+                path: "Express",
+                element:<Suspense fallback={'加載中'}><Express/></Suspense>
             },
 
 

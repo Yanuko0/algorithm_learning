@@ -1,5 +1,4 @@
 
-
 import node_img from "@/pages/NodeJs/assets/img/node_img"
 import { Image } from "antd"
 
@@ -7,108 +6,113 @@ import { Image } from "antd"
 import "@/pages/Algorithm_learning/scss/algorithmPageStyle.scss"
 
 
-const NpmAndPackages: React.FC = () => {
+const Express: React.FC = () => {
 
     return (
         <div className="full_page">
-            {/* npm與包 */}
+            {/* Express學習 */}
             <div className="title">
-                npm與包
+                Express學習
             </div>
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        什麼是包
+                        學習目標
                     </p>
                     <p>
-                        Node.js中的第三方模塊又叫做包。
-                    </p>
-                    <p>
-                        就像電腦和計算機是指相同的東西,第三方模塊和包是指同一概念,只不過叫法不同
+                        <ul>
+                            <li>能夠使用express.static()快速托管靜態資源</li>
+                            <li>能夠使用express路由精簡項目結構</li>
+                            <li>能夠使用常見的express 中間件</li>
+                            <li>能夠使用express 創建API接口</li>
+                            <li>能夠在express中啟用cors跨域資源共享</li>
+                        </ul>
                     </p>
                 </div>
             </div>
-            {/* 包的來源 */}
+            {/* 初識Express */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        包的來源
+                        初識Express
+                    </p>
+                    <p>官方給出的概念:Express 是基於Node.js平台, 快速、開放、極簡的Web 開發框架</p>
+                    <p>
+                        通俗的理解: Express的作用和Node.js內置的http模塊類似, 是專門用來創建Web服務器的。
                     </p>
                     <p>
-                        不同於Node.js中的內置模塊與自定義模塊, 包是由第三方個人或團隊開發出來的,免費供所有人使用
+                        本質上就是npm上的第三方包,提供了快速創建Web服務器的便捷方法。
+                    </p>
+                    <ul>
+                        <li><a href="https://www.expressjs.com.cn/">Express</a></li>
+                    </ul>
+                   
+                </div>
+            </div>
+            {/* 進一步理解Express */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                        進一步理解Express
                     </p>
                     <p>
-                        注意:Node.js中的包都是免費且開源的,不需要付費即可下載使用。
+                        思考: 不使用Express能否創建Web服務器?
+                        <ul>
+                            <li>答案:能,使用Node.js提供的原生http模塊即可。</li>
+                        </ul>
+                        <br/>
+                        思考: 既然有了http模塊,為什麼還有用Express?
+                        <ul>
+                            <li>答案: http內置模塊用起來很複雜, 開發效率低; Express是基於內置的http 模塊進一步封裝出來的, 能夠極大的提高開發效率。</li>
+                        </ul>
+                        <br/>
+                        思考:http內置模塊與Express是什麼關係?
+                        <ul>
+                            <li>答案:類似於瀏覽器中Web API和JQuery的關係。後者是基於前者進一步封裝出來的。</li>
+                        </ul>
+                    </p>
+                    
+                    
+                </div>
+            </div>
+            {/* Express能做什麼 */}
+            <div className="introduce">
+                <div className="diagrambox">
+                    <p>
+                         Express能做什麼
+                    </p>
+                    <p>
+                        對於前端程序員來說,最常見的兩種服務器,分別是:
+                        <ul>
+                            <li>Web網站服務器: 專門對外提供Web網頁資源的服務器。</li>
+                            <li>API接口服務器: 專門對外提供API接口的服務器。</li>
+                        </ul>
+                        使用Express, 我們可以方便、快速的創建Web網站的服務器或API接口的服務器。
                     </p>
                 </div>
             </div>
-            {/* 為什麼需要包 */}
+            {/* 安裝 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        為什麼需要包
+                        安裝
                     </p>
                     <p>
-                        由於Node.js的內置模塊僅提供了一些底層的API,導致在基於內置模塊進行項目開發時,效率很低
+                        在項目所處的目錄中, 運行如下終端命令, 即可將express安裝到項目中使用:
                     </p>
                     <p>
-                        包是基於內置模塊封裝出來,提供更高級、更方便的API, 極大的提高開發效率。
-                    </p>
-                    <p>
-                        包和內置模塊之間的關係,類似於JQuery和瀏覽器內置API之間的關係。
-                    </p>
-                </div>
-            </div>
-            {/* 從哪裡下載包 */}
-            <div className="introduce">
-                <div className="diagrambox">
-                    <p>
-                        從哪裡下載包
-                    </p>
-                    <p>
-                        <a href="https://www.npmjs.com/">npm</a>包下載平台
-                    </p>
-                    <p>
-                        npm-v可以查看自己電腦上安裝的npm包管理工具的版本號
-                    </p>
-                </div>
-            </div>
-            {/* npm初體驗 */}
-            <div className="introduce">
-                <div className="diagrambox">
-                    <p>
-                        格式化時間的傳統做法
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.npm_01} alt="npm_01" />
-                            </Image.PreviewGroup>
-                        </div>
-                    </p>
-                    <p className="diagram">
-                        <div className="commentaryBox">
-                            <Image.PreviewGroup
-                                preview={{
-                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                }}
-                            >
-                                <Image src={node_img.npm_02} alt="npm_02" />
-                            </Image.PreviewGroup>
-                        </div>
+                        <ul>
+                            <li>npm i express @4.17.1</li>
+                        </ul>
                     </p>
                 </div>
             </div>
 
-            {/* 格式化時間的高級作法 */}
+            {/* 創建基本的Web服務器 */}
             <div className="introduce">
                 <div className="diagrambox">
                     <p>
-                        格式化時間的高級作法
+                        創建基本的Web服務器
                     </p>
                     <p>
                         <ul>
@@ -722,4 +726,4 @@ const NpmAndPackages: React.FC = () => {
     )
 }
 
-export default NpmAndPackages
+export default Express
