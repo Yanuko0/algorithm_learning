@@ -74,6 +74,12 @@ import 包_12 from "./01Nodejs/包_12.png"
 import 包_13 from "./01Nodejs/包_13.png"
 import 包_14 from "./01Nodejs/包_14.png"
 import 模塊加載_01 from "./01Nodejs/模塊加載_01.png"
+import express_01 from "./01Nodejs/express_01.png"
+import express_02 from "./01Nodejs/express_02.png"
+import express_03 from "./01Nodejs/express_03.png"
+import express_04 from "./01Nodejs/express_04.png"
+import express_05 from "./01Nodejs/express_05.png"
+import express_06 from "./01Nodejs/express_06.png"
 
 const node_img = {
     fs_01,
@@ -152,7 +158,12 @@ const node_img = {
     包_13,
     包_14,
     模塊加載_01,
-
+    express_01,
+    express_02,
+    express_03,
+    express_04,
+    express_05,
+    express_06,
 }
 
 export default node_img
