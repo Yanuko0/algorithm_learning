@@ -51,7 +51,7 @@ const items: MenuItem[] = [
         getItem('第十章-動態規劃', '/Dynamic_Programming'),
         getItem('第十一章-貪心算法', '/Greedy_Algorithm'),
     ]),
-    getItem('AI', 'sub2', <OpenAIOutlined/>,[
+    getItem('AI', 'sub2', <OpenAIOutlined />, [
         getItem('第一章-人工智能入門', '/AI'),
         getItem('第二章-如何實現自動化決策', '/AI/Automated_Decision_Making'),
         getItem('第三章-圖像識別與自然語言處理', '/AI/Image_Recognition'),
@@ -74,7 +74,7 @@ const items: MenuItem[] = [
         getItem('第十四章-梯度消失與Dropout', '/AI/Gradient_Disappears'),
         getItem('實戰項目-神經網路算法', '/AI/Pp07_Neural_Network_Algorithm'),
     ]),
-    getItem('Node.Js', 'sub3', <RadarChartOutlined/>, [
+    getItem('Node.Js', 'sub3', <RadarChartOutlined />, [
         getItem('第一章-初識NodeJs', '/NodeJs'),
         getItem('第二章-fs文件系統模塊', '/NodeJs/File_SystemModule'),
         getItem('第三章-path路徑模塊', '/NodeJs/Path_Module'),
@@ -84,7 +84,7 @@ const items: MenuItem[] = [
         getItem('第七章-模塊加載機制', '/NodeJs/Module_LoadingMechanism'),
         getItem('第八章-Express學習', '/NodeJs/Express'),
     ]),
-    getItem('SpecialEffectsAnimation', 'sub4', <PlayCircleOutlined/>, [
+    getItem('SpecialEffectsAnimation', 'sub4', <PlayCircleOutlined />, [
         getItem('Step_on_landmines', '/games'),
     ]),
 ];
@@ -107,7 +107,7 @@ const App: React.FC = () => {
     // const selectedKey = location.pathname
     // console.log(selectedKey)
 
- 
+
     useEffect(() => {
         setCurrent(location.pathname);
     }, [navigate]);
@@ -122,14 +122,26 @@ const App: React.FC = () => {
         setMenuTheme(value ? 'dark' : 'light');
     };
 
-  
+
     //左側導行欄位縮放
     const [collapsed, setCollapsed] = useState(true);
+    const [hideMenu, setHideMenu] = useState(false);
+    const [clickCount, setClickCount] = useState(0);
 
     const toggleCollapsed = () => {
-        setCollapsed(!collapsed);
-    };
+        const newClickCount = (clickCount + 1) % 3;
+        setClickCount(newClickCount);
 
+        if (newClickCount === 2) {
+            // 第三次點擊，完全隱藏
+            setHideMenu(true);
+            setCollapsed(true);
+        } else {
+            // 第一次或第二次點擊，切換收縮狀態
+            setHideMenu(false);
+            setCollapsed(!collapsed);
+        }
+    };
 
     return (
         <Layout>
@@ -146,30 +158,30 @@ const App: React.FC = () => {
             </Header>
 
             <Layout>
-
-                <Sider width={200} className="site-layout-background" collapsed={collapsed}>
-                    <Switch
-                        checked={menuTheme === 'dark'}
-                        onChange={changeTheme}
-                        checkedChildren="Dark"
-                        unCheckedChildren="Light"
-                    />
-                    <Menu
-                        mode="inline"
-                        theme={menuTheme}
-                        // defaultSelectedKeys={['1']}
-                        selectedKeys={[current]}
-                        onClick={onMenuClick}
-                        items={items}
-                        style={{ height: '100%', borderRight: 0 }}>
-                    </Menu>
-                </Sider>
-
+                {!hideMenu && (
+                    <Sider width={200} className="site-layout-background" collapsed={collapsed}>
+                        <Switch
+                            checked={menuTheme === 'dark'}
+                            onChange={changeTheme}
+                            checkedChildren="Dark"
+                            unCheckedChildren="Light"
+                        />
+                        <Menu
+                            mode="inline"
+                            theme={menuTheme}
+                            // defaultSelectedKeys={['1']}
+                            selectedKeys={[current]}
+                            onClick={onMenuClick}
+                            items={items}
+                            style={{ height: '100%', borderRight: 0 }}>
+                        </Menu>
+                    </Sider>
+                )}
                 <Layout className="layout-content" style={{ padding: 20 }}>
                     {/* 二級路由出口 */}
                     <Outlet />
                     <Footer style={{ textAlign: 'center' }}>
-                        <a href="https://www.instagram.com/baredragon/"  target="_blank" >立瑜製作</a> ©{new Date().getFullYear()} Created by LiYu
+                        <a href="https://www.instagram.com/baredragon/" target="_blank" >立瑜製作</a> ©{new Date().getFullYear()} Created by LiYu
                     </Footer>
                 </Layout>
 
