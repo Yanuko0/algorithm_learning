@@ -25,7 +25,7 @@ interface GameLevel {
 const GAME_LEVELS: GameLevel[] = [
   { rows: 9, cols: 9, mines: 10, level: 1 },
   { rows: 12, cols: 12, mines: 15, level: 2 },
-  { rows: 16, cols: 16, mines: 45, level: 3 }
+  { rows: 16, cols: 16, mines: 30, level: 3 }
 ];
 
 // 更新樣式定義
@@ -178,12 +178,36 @@ const Cell = styled.div<{ isRevealed: boolean }>`
   }
 `;
 
-function Step_on_landmines() {
+// 添加新的樣式組件
+const LevelCompleteOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  border-radius: 12px;
+`;
+
+const NextLevelButton = styled(RestartButton)`
+  background-color: #4CAF50;
+  &:hover {
+    background-color: #45a049;
+  }
+`;
+
+function App() {
   const [board, setBoard] = useState<ICell[][]>([]);
   const [gameOver, setGameOver] = useState(false);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [currentLevel, setCurrentLevel] = useState<GameLevel>(GAME_LEVELS[0]);
   const [remainingMines, setRemainingMines] = useState(0);
+  const [levelComplete, setLevelComplete] = useState(false);
 
   // 初始化遊戲板
   const initializeBoard = (level: GameLevel) => {
@@ -253,31 +277,19 @@ function Step_on_landmines() {
 
   // 檢查是否完成當前關卡
   const checkLevelComplete = () => {
-    let flaggedMines = 0;
-    let correctFlags = 0;
-
+    let isComplete = true;
     for (let i = 0; i < currentLevel.rows; i++) {
       for (let j = 0; j < currentLevel.cols; j++) {
-        if (board[i][j].isFlagged) {
-          flaggedMines++;
-          if (board[i][j].isMine) {
-            correctFlags++;
-          }
+        if (!board[i][j].isMine && !board[i][j].isRevealed) {
+          isComplete = false;
+          break;
         }
       }
+      if (!isComplete) break;
     }
 
-    if (correctFlags === currentLevel.mines && flaggedMines === currentLevel.mines) {
-      if (currentLevel.level < GAME_LEVELS.length) {
-        // 進入下一關
-        const nextLevel = GAME_LEVELS[currentLevel.level];
-        setCurrentLevel(nextLevel);
-        initializeBoard(nextLevel);
-      } else {
-        // 遊戲通關
-        alert('恭喜通關！');
-        setIsGameStarted(false);
-      }
+    if (isComplete) {
+      setLevelComplete(true);
     }
   };
 
@@ -306,18 +318,16 @@ function Step_on_landmines() {
   const handleCellClick = (row: number, col: number) => {
     if (!isGameStarted || gameOver || board[row][col].isFlagged) return;
 
-    const newBoard = [...board.map(row => [...row])];  // 深拷貝
+    const newBoard = [...board.map(row => [...row])];
     
     if (newBoard[row][col].isMine) {
-      // 踩到地雷，遊戲結束
       setGameOver(true);
       revealAll(newBoard);
     } else {
-      // 揭開格子
       revealCell(newBoard, row, col);
+      setBoard(newBoard);
+      checkLevelComplete();
     }
-
-    setBoard(newBoard);
   };
 
   // 揭開格子的函數
@@ -349,6 +359,18 @@ function Step_on_landmines() {
       for (let j = 0; j < currentLevel.cols; j++) {
         board[i][j].isRevealed = true;
       }
+    }
+  };
+
+  // 添加處理下一關的函數
+  const handleNextLevel = () => {
+    setLevelComplete(false);
+    if (currentLevel.level < GAME_LEVELS.length) {
+      const nextLevel = GAME_LEVELS[currentLevel.level];
+      setCurrentLevel(nextLevel);
+      initializeBoard(nextLevel);
+    } else {
+      setIsGameStarted(false);
     }
   };
 
@@ -393,6 +415,22 @@ function Step_on_landmines() {
                 </GameOverContent>
               </GameOverlay>
             )}
+
+            {levelComplete && (
+              <LevelCompleteOverlay>
+                <GameOverContent>
+                  <h2 style={{ color: 'white', marginBottom: '20px' }}>
+                    {currentLevel.level < GAME_LEVELS.length 
+                      ? `恭喜通過第 ${currentLevel.level} 關！`
+                      : '恭喜完成所有關卡！'
+                    }
+                  </h2>
+                  <NextLevelButton onClick={handleNextLevel}>
+                    {currentLevel.level < GAME_LEVELS.length ? '下一關' : '重新開始'}
+                  </NextLevelButton>
+                </GameOverContent>
+              </LevelCompleteOverlay>
+            )}
           </>
         )}
       </GameWrapper>
@@ -400,4 +438,4 @@ function Step_on_landmines() {
   );
 }
 
-export default Step_on_landmines;
+export default App;
