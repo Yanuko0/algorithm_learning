@@ -7,6 +7,7 @@ import {
     MenuFoldOutlined,
     OpenAIOutlined,
     RadarChartOutlined,
+    PlayCircleOutlined,
 
 } from '@ant-design/icons'
 import './index.scss'
@@ -82,6 +83,9 @@ const items: MenuItem[] = [
         getItem('第六章-npm與包', '/NodeJs/NpmAndPackages'),
         getItem('第七章-模塊加載機制', '/NodeJs/Module_LoadingMechanism'),
         getItem('第八章-Express學習', '/NodeJs/Express'),
+    ]),
+    getItem('SpecialEffectsAnimation', 'sub4', <PlayCircleOutlined/>, [
+        getItem('Step_on_landmines', '/games'),
     ]),
 ];
 

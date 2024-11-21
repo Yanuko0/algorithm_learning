@@ -49,6 +49,7 @@ const Modular = lazy(()=>import("../pages/NodeJs/05_Modular"))
 const NpmAndPackages = lazy(()=>import("../pages/NodeJs/06_NpmAndPackages"))
 const Module_LoadingMechanism = lazy(()=> import("../pages/NodeJs/07_Module_LoadingMechanism"))
 const Express = lazy(()=>import("../pages/NodeJs/08_Express"))
+const Step_on_landmines = lazy(()=>import("../pages/SpecialEffectsAnimation/Step_on_landmines"))
 
 const router = createHashRouter([
     {
@@ -233,6 +234,16 @@ const router = createHashRouter([
             },
 
 
+        ]
+    },
+    {
+        path: '/games',
+        element:<Layout/>,
+        children:[
+            {
+                index:true,
+                element:<Suspense fallback={'加載中'}><Step_on_landmines/></Suspense>
+            },
         ]
     }
 ])
