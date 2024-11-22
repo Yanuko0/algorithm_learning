@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import styled from 'styled-components';
 import logoImg from './assets/images/chiikawa/logo.png';
 import errorImg from './assets/images/chiikawa/gameover.png';
 import bg1Img from './assets/images/chiikawa/bg1.jpg';
 import bg3Img from './assets/images/chiikawa/bg3.jpg';
-
+import startImg from './assets/images/chiikawa/睡衣派對.jpg';
+import gameoverSound from './assets/music/gameover.mp3';
+import clickSound from './assets/music/被吃掉.mp3';
+import bgmSound from './assets/music/bgm.mp3';
 
 // 定義所有介面
 interface ICell {
@@ -77,6 +80,12 @@ const StartButton = styled.button`
   &:hover {
     background-color: #45a049;
   }
+`;
+
+const StartImage = styled.img`
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
 `;
 
 const LevelInfo = styled.div`
@@ -201,13 +210,20 @@ const NextLevelButton = styled(RestartButton)`
   }
 `;
 
-function App() {
+function Step_on_landmines() {
   const [board, setBoard] = useState<ICell[][]>([]);
   const [gameOver, setGameOver] = useState(false);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [currentLevel, setCurrentLevel] = useState<GameLevel>(GAME_LEVELS[0]);
   const [remainingMines, setRemainingMines] = useState(0);
   const [levelComplete, setLevelComplete] = useState(false);
+  const bgmRef = useRef<HTMLAudioElement | null>(null);
+
+  // 音效播放函數
+  const playSound = (soundFile: string) => {
+    const audio = new Audio(soundFile);
+    audio.play();
+  };
 
   // 初始化遊戲板
   const initializeBoard = (level: GameLevel) => {
@@ -312,18 +328,30 @@ function App() {
     setGameOver(false);
     setCurrentLevel(GAME_LEVELS[0]);
     initializeBoard(GAME_LEVELS[0]);
+    
+    // 開始播放背景音樂
+    bgmRef.current = new Audio(bgmSound);
+    bgmRef.current.loop = true;
+    bgmRef.current.play();
   };
 
   // 添加 handleCellClick 函數
   const handleCellClick = (row: number, col: number) => {
-    if (!isGameStarted || gameOver || board[row][col].isFlagged) return;
+    if (!isGameStarted || gameOver || board[row][col].isFlagged || board[row][col].isRevealed) return;
 
     const newBoard = [...board.map(row => [...row])];
     
     if (newBoard[row][col].isMine) {
+      // 停止背景音樂
+      if (bgmRef.current) {
+        bgmRef.current.pause();
+        bgmRef.current = null;
+      }
+      playSound(gameoverSound);
       setGameOver(true);
       revealAll(newBoard);
     } else {
+      playSound(clickSound);
       revealCell(newBoard, row, col);
       setBoard(newBoard);
       checkLevelComplete();
@@ -370,6 +398,11 @@ function App() {
       setCurrentLevel(nextLevel);
       initializeBoard(nextLevel);
     } else {
+      // 停止背景音樂
+      if (bgmRef.current) {
+        bgmRef.current.pause();
+        bgmRef.current = null;
+      }
       setIsGameStarted(false);
     }
   };
@@ -378,7 +411,10 @@ function App() {
     <GameContainer>
       <GameWrapper>
         {!isGameStarted ? (
-          <StartButton onClick={startGame}>開始遊戲</StartButton>
+          <>
+            <StartImage src={startImg} alt="start" />
+            <StartButton onClick={startGame}>開始遊戲</StartButton>
+          </>
         ) : (
           <>
             <LevelInfo>
@@ -438,4 +474,4 @@ function App() {
   );
 }
 
-export default App;
+export default Step_on_landmines;
